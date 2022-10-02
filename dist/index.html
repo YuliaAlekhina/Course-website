@@ -1,0 +1,3160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;900&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="../Favicon.png" type="image/x-icon">
+    <style>
+       /**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+.owl-carousel,.owl-carousel .owl-item{-webkit-tap-highlight-color:transparent;position:relative}.owl-carousel{display:none;width:100%;z-index:1}.owl-carousel .owl-stage{position:relative;-ms-touch-action:pan-Y;touch-action:manipulation;-moz-backface-visibility:hidden}.owl-carousel .owl-stage:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.owl-carousel .owl-stage-outer{position:relative;overflow:hidden;-webkit-transform:translate3d(0,0,0)}.owl-carousel .owl-item,.owl-carousel .owl-wrapper{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0)}.owl-carousel .owl-item{min-height:1px;float:left;-webkit-backface-visibility:hidden;-webkit-touch-callout:none}.owl-carousel .owl-item img{display:block;width:100%}.owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled{display:none}.no-js .owl-carousel,.owl-carousel.owl-loaded{display:block}.owl-carousel .owl-dot,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-nav .owl-prev{cursor:pointer;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel .owl-nav button.owl-next,.owl-carousel .owl-nav button.owl-prev,.owl-carousel button.owl-dot{background:0 0;color:inherit;border:none;padding:0!important;font:inherit}.owl-carousel.owl-loading{opacity:0;display:block}.owl-carousel.owl-hidden{opacity:0}.owl-carousel.owl-refresh .owl-item{visibility:hidden}.owl-carousel.owl-drag .owl-item{-ms-touch-action:pan-y;touch-action:pan-y;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-grab{cursor:move;cursor:grab}.owl-carousel.owl-rtl{direction:rtl}.owl-carousel.owl-rtl .owl-item{float:right}.owl-carousel .animated{animation-duration:1s;animation-fill-mode:both}.owl-carousel .owl-animated-in{z-index:0}.owl-carousel .owl-animated-out{z-index:1}.owl-carousel .fadeOut{animation-name:fadeOut}@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}.owl-height{transition:height .5s ease-in-out}.owl-carousel .owl-item .owl-lazy{opacity:0;transition:opacity .4s ease}.owl-carousel .owl-item .owl-lazy:not([src]),.owl-carousel .owl-item .owl-lazy[src^=""]{max-height:0}.owl-carousel .owl-item img.owl-lazy{transform-style:preserve-3d}.owl-carousel .owl-video-wrapper{position:relative;height:100%;background:#000}.owl-carousel .owl-video-play-icon{position:absolute;height:80px;width:80px;left:50%;top:50%;margin-left:-40px;margin-top:-40px;background:url(owl.video.play.png) no-repeat;cursor:pointer;z-index:1;-webkit-backface-visibility:hidden;transition:transform .1s ease}.owl-carousel .owl-video-play-icon:hover{-ms-transform:scale(1.3,1.3);transform:scale(1.3,1.3)}.owl-carousel .owl-video-playing .owl-video-play-icon,.owl-carousel .owl-video-playing .owl-video-tn{display:none}.owl-carousel .owl-video-tn{opacity:0;height:100%;background-position:center center;background-repeat:no-repeat;background-size:contain;transition:opacity .4s ease}.owl-carousel .owl-video-frame{position:relative;z-index:1;height:100%;width:100%}/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+.owl-theme .owl-dots,.owl-theme .owl-nav{text-align:center;-webkit-tap-highlight-color:transparent}.owl-theme .owl-nav{margin-top:10px}.owl-theme .owl-nav [class*=owl-]{color:#FFF;font-size:14px;margin:5px;padding:4px 7px;background:#D6D6D6;display:inline-block;cursor:pointer;border-radius:3px}.owl-theme .owl-nav [class*=owl-]:hover{background:#869791;color:#FFF;text-decoration:none}.owl-theme .owl-nav .disabled{opacity:.5;cursor:default}.owl-theme .owl-nav.disabled+.owl-dots{margin-top:10px}.owl-theme .owl-dots .owl-dot{display:inline-block;zoom:1}.owl-theme .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 7px;background:#D6D6D6;display:block;-webkit-backface-visibility:visible;transition:opacity .2s ease;border-radius:30px}.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#869791}@charset "UTF-8";
+/*----Общие настройки------*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Noto Sans", sans-serif;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
+
+/*---Шапка-------*/
+.background {
+  background-image: url(../img/home/background.jpg);
+}
+
+.header {
+  padding-top: 60px;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__logo {
+  margin-right: 60px;
+}
+
+.menu__item {
+  display: flex;
+}
+
+.menu__item li a {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+}
+
+.menu__item li a:hover {
+  color: #FF3F3A;
+  transition: all 0.5s ease 0s;
+}
+
+.menu__item li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.menu__button a {
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  border-radius: 4px;
+  color: #fff;
+  padding: 25px 40px;
+}
+
+@media (max-width: 950px) {
+  .menu__button {
+    display: none;
+  }
+}
+/*--Бургер--*/
+@media (max-width: 690px) {
+  .menu__burger {
+    position: relative;
+    width: 28px;
+    height: 18px;
+    z-index: 3;
+  }
+
+  .menu__burger::before,
+.menu__burger::after {
+    content: "";
+    background-color: #FE5244;
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    border-radius: 50px;
+    transition: all 0.5s ease 0s;
+  }
+
+  .menu__burger::before {
+    top: 0;
+  }
+
+  .menu__burger::after {
+    bottom: 0;
+  }
+
+  /*---Активный бургер----*/
+  .menu__burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .menu__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 3px;
+  }
+
+  .menu-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 380px;
+    transition: all 0.5s ease 0s;
+    overflow: auto;
+    background: linear-gradient(180deg, #FFD19A 19.27%, #FF7145 74.48%);
+    z-index: 1;
+  }
+
+  .menu__item {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .menu__item li:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .menu-nav.active {
+    left: 0%;
+  }
+
+  body.lock {
+    overflow: hidden;
+  }
+}
+/*----main---------*/
+.main {
+  margin-top: 80px;
+  padding-bottom: 1px;
+}
+
+.main__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  color: #1E212C;
+}
+
+.main__button {
+  margin-top: 60px;
+}
+
+.button__one {
+  margin-right: 24px;
+}
+
+/*---Стили для кнопок-----*/
+.all-button__first {
+  border-radius: 4px;
+  border: 2px solid #FF3F3A;
+  padding: 15px 30px;
+  color: #FF3F3A;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.all-button__second {
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  border-radius: 4px;
+  padding: 17px 30px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/*--------------------*/
+@media (max-width: 1050px) {
+  .main__block {
+    flex-direction: column;
+  }
+
+  .main__image {
+    margin-top: 60px;
+  }
+
+  .main__image img {
+    width: 100%;
+  }
+}
+@media (max-width: 530px) {
+  .main__title {
+    font-size: 45px;
+  }
+}
+@media (max-width: 400px) {
+  .main__button {
+    flex-direction: column;
+    display: flex;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .button__one {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .main__title {
+    text-align: center;
+  }
+}
+.main__advantage {
+  margin: 80px 0 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantage-one,
+.advantage-two,
+.advantage-three,
+.advantage-for {
+  display: flex;
+  align-items: center;
+}
+
+.advantage-one,
+.advantage-two,
+.advantage-three {
+  position: relative;
+}
+
+.advantage-one::before,
+.advantage-two::before,
+.advantage-three::before {
+  content: "";
+  position: absolute;
+  background: #FF3F3A;
+  border-radius: 50%;
+  top: 27px;
+  right: -25%;
+  width: 8px;
+  height: 8px;
+}
+
+.advantage-two::before {
+  right: -35%;
+}
+
+.advantage-three::before {
+  right: -35%;
+}
+
+.advantage__number {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1E212C;
+}
+
+.advantage__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #1E212C;
+  margin-left: 10px;
+}
+
+@media (max-width: 1200px) {
+  .advantage-one::before,
+.advantage-two::before,
+.advantage-three::before {
+    display: none;
+  }
+}
+@media (max-width: 970px) {
+  .main__advantage {
+    flex-wrap: wrap;
+  }
+
+  .advantage-one,
+.advantage-two,
+.advantage-three {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 440px) {
+  .main__advantage {
+    flex-direction: column;
+  }
+
+  .advantage-one,
+.advantage-two,
+.advantage-three,
+.advantage-for {
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+}
+/*------createx-------*/
+.createx {
+  margin-top: 150px;
+}
+
+.createx__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.createx__image {
+  flex: 1 1 100%;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1E212C;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1E212C;
+}
+
+.createx__title {
+  margin: 10px 0 20px 0;
+}
+
+.createx__offer-content {
+  margin-bottom: 50px;
+}
+
+.createx__offer {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+  margin-top: 10px;
+}
+
+.check {
+  position: absolute;
+  top: 4px;
+  left: -24px;
+  width: 15px;
+  height: 15px;
+}
+
+@media (max-width: 1180px) {
+  .createx__image img {
+    width: 100%;
+  }
+
+  .createx__body {
+    flex-direction: column-reverse;
+  }
+
+  .createx__image {
+    margin-top: 60px;
+  }
+
+  .createx__offer-content {
+    margin-left: 25px;
+  }
+}
+/*----featured-courses---------------*/
+.featured-courses {
+  margin-top: 150px;
+}
+
+.featured-courses__item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/*---Карточки--*/
+.featured-courses__cards {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.featured-courses__card {
+  margin-top: 30px;
+  background: #FFFFFF;
+  border: 1px solid #E5E8ED;
+  display: flex;
+  flex: 1 1 45%;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+}
+
+.featured-courses__card-info {
+  padding: 25px;
+}
+
+.featured-courses__card_job-one {
+  color: #fff;
+  background: #03CEA4;
+  border-radius: 4px;
+  padding: 3px 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  width: 80px;
+}
+
+.featured-courses__card_job-two {
+  color: #fff;
+  background: #5A87FC;
+  border-radius: 4px;
+  padding: 3px 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  width: 100px;
+}
+
+.featured-courses__card_job-three {
+  color: #fff;
+  background: #F89828;
+  border-radius: 4px;
+  padding: 3px 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  width: 112px;
+}
+
+.featured-courses__card_job-six {
+  color: #fff;
+  background: #F52F6E;
+  border-radius: 4px;
+  padding: 3px 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  width: 60px;
+}
+
+.featured-courses__card_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1E212C;
+  margin: 13px 0 13px 0;
+}
+
+.featured-courses__card_price {
+  display: flex;
+}
+
+.card_price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FF4242;
+}
+
+.card_name {
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #787A80;
+  margin-left: 20px;
+}
+
+.card_name::before {
+  content: "";
+  position: absolute;
+  background-color: #787A80;
+  height: 26px;
+  width: 2px;
+  top: 0;
+  left: -10px;
+}
+
+.card-one,
+.card-three,
+.card-five {
+  margin-right: 30px;
+}
+
+@media (max-width: 1030px) {
+  .featured-courses__cards {
+    flex-direction: column;
+  }
+
+  .card-one,
+.card-three,
+.card-five {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 670px) {
+  .featured-courses__item {
+    flex-direction: column;
+  }
+
+  .featured-courses__button {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 520px) {
+  .featured-courses__card {
+    flex-direction: column;
+  }
+
+  .featured-courses__card-info {
+    padding: 20px;
+  }
+
+  .featured-courses__title {
+    text-align: center;
+  }
+}
+/*-----benefits-------*/
+.benefits {
+  margin-top: 150px;
+}
+
+.benefits__subtitle,
+.benefits__title {
+  text-align: center;
+}
+
+/*--Вкладки----*/
+.benefits__block {
+  margin-top: 70px;
+}
+
+.benefits-tabs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.benefits-tabs__item a {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #9A9CA5;
+}
+
+.benefits-tabs__item a:hover {
+  border: 1px solid #FF3F3A;
+  border-radius: 4px;
+  color: #FF3F3A;
+  padding: 10px 70px;
+}
+
+.benefits-wrap {
+  margin-top: 60px;
+}
+
+.benefits-wrap__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits-card__info {
+  margin-top: 70px;
+}
+
+.benefits-card__title {
+  margin-bottom: 25px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+}
+
+.tabs__content {
+  display: none !important;
+}
+
+.tabs__content.active {
+  display: flex !important;
+}
+
+@media (max-width: 1000px) {
+  .benefits-card__info {
+    margin-top: 10px;
+  }
+
+  .benefits-wrap__item {
+    flex-direction: column;
+  }
+
+  .benefits-card__image {
+    margin: 40px auto;
+  }
+
+  .benefits-card__image img {
+    max-width: 600px;
+  }
+}
+@media (max-width: 870px) {
+  .benefits-tabs__item a:hover {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 650px) {
+  .benefits-tabs {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .benefits__block {
+    margin-top: 20px;
+  }
+
+  .benefits-tabs__item a {
+    line-height: 270%;
+  }
+
+  .benefits-card__image img {
+    width: 100%;
+  }
+
+  .benefits-wrap {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 550px) {
+  .benefits-card__title {
+    font-size: 35px;
+  }
+}
+/*--------our-events-----------*/
+.our-events {
+  margin-top: 150px;
+  background-image: url(../img/our-events/bg-color.jpg);
+  padding: 80px 0 80px 0;
+}
+
+.our-events__subtitle,
+.our-events__title {
+  text-align: center;
+}
+
+/*---cards---*/
+.our-events__cards {
+  margin-top: 35px;
+}
+
+.our-events__card {
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 25px 20px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.our-events__up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.our-events__number {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 130%;
+  color: #FF3F3A;
+}
+
+.our-events__month,
+.our-event__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1E212C;
+}
+
+.our-events__item {
+  margin-top: 20px;
+}
+
+.our-events__time,
+.our-event__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #787A80;
+}
+
+.our-events__btn:hover {
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more__text {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: #1E212C;
+  margin-right: 40px;
+}
+
+@media (max-width: 540px) {
+  .more {
+    flex-direction: column;
+  }
+
+  .more__text {
+    margin-right: 0px;
+  }
+
+  .more__button {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 390px) {
+  .our-events__up {
+    flex-direction: column;
+  }
+
+  .our-events__date {
+    text-align: center;
+  }
+
+  .our-events__button {
+    margin-top: 30px;
+  }
+
+  .our-events__item {
+    margin-top: 40px;
+  }
+}
+/*--------certificate---------------*/
+.certificate {
+  margin-top: 120px;
+}
+
+.certificate__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.certificate__info {
+  margin-right: 80px;
+}
+
+.certificate__title {
+  margin: 20px 0 40px 0;
+}
+
+.certificate__text {
+  margin-bottom: 25px;
+}
+
+.certificate__img img:not(:last-child) {
+  margin-right: 20px;
+}
+
+.certificate__image img {
+  box-shadow: 10px 10px 35px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1100px) {
+  .certificate__body {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .certificate__img {
+    margin-bottom: 30px;
+  }
+
+  .certificate__image img {
+    width: 100%;
+  }
+
+  .certificate__info {
+    margin-right: 0px;
+  }
+}
+/*---------tutors-------------*/
+.tutors {
+  background-image: url(../img/tutors/Background.jpg);
+  padding-top: 150px;
+  margin-top: -35px;
+}
+
+.our-tutors {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.tutor__info {
+  flex: 1 1 25%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.tutors__name {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #424551;
+}
+
+.tutors__job-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #787A80;
+}
+
+@media (max-width: 1230px) {
+  .our-tutors {
+    flex-wrap: wrap;
+  }
+}
+/*-------testimonials-----------*/
+.testimonials {
+  margin-top: 150px;
+}
+
+.testimonials__row {
+  display: flex;
+}
+
+.test__body {
+  display: flex;
+}
+
+.testimonials__body {
+  padding-bottom: 40px;
+}
+
+.testimonials__subtitle,
+.testimonials__title {
+  text-align: center;
+}
+
+.testimonials__info {
+  background-color: #FFFFFF;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+  padding: 40px;
+  margin: 60px 100px 40px 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.commentator {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.testimonials__text {
+  position: relative;
+  margin-left: 60px;
+  flex: 1 1 auto;
+}
+
+.testimonials__text::before {
+  position: absolute;
+  content: "";
+  background: url(../img/testimonials/quotes.png);
+  top: 0;
+  left: -50px;
+  width: 28px;
+  height: 20px;
+}
+
+.commentator {
+  margin-left: 60px;
+}
+
+.commentator__photo {
+  margin-right: 20px;
+}
+
+.commentator__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: #1E212C;
+}
+
+.commentator__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #787A80;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  top: 160px;
+  right: 20px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  top: 160px;
+  left: 20px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: #FF3F3A;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  color: #FFF;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.owl-carousel .owl-nav button.owl-prev img,
+.owl-carousel .owl-nav button.owl-next img {
+  vertical-align: baseline;
+}
+
+@media (max-width: 650px) {
+  .owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    display: none;
+  }
+
+  .testimonials__info {
+    margin: 60px 20px 40px 20px;
+  }
+}
+@media (max-width: 400px) {
+  .testimonials__info {
+    padding: 20px;
+  }
+}
+/*-------posts------------*/
+.posts {
+  margin-top: 120px;
+}
+
+.posts__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.posts__body {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px -10px;
+}
+
+.posts__information {
+  padding: 0px 10px;
+  flex: 1 1 33.333%;
+}
+
+.posts__row {
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #787A80;
+  margin: 15px 0 10px 0;
+}
+
+.specification {
+  position: relative;
+  margin-right: 20px;
+}
+
+.specification::before,
+.time::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 12px;
+  background-color: #787A80;
+}
+
+.specification::before {
+  top: 5px;
+  right: -11px;
+}
+
+.data {
+  position: relative;
+  margin-left: 23px;
+}
+
+.specification::before,
+.time::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 12px;
+  background-color: #787A80;
+}
+
+.data::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/posts/Calendar.png);
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  left: -20px;
+}
+
+.time {
+  position: relative;
+  margin-left: 40px;
+}
+
+.time::before {
+  top: 5px;
+  left: -29px;
+}
+
+.time::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/posts/Clock.png);
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  left: -19px;
+}
+
+.post__offer {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1E212C;
+  margin-bottom: 10px;
+  max-width: 390px;
+}
+
+.post__text {
+  max-width: 390px;
+}
+
+@media (max-width: 1450px) {
+  .posts__body {
+    flex-wrap: wrap;
+    margin: 20px -10px;
+  }
+
+  .posts__information {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .posts__body {
+    margin: 60px 0px 0px 0px;
+  }
+
+  .posts__information {
+    padding: 2px;
+  }
+}
+@media (max-width: 500px) {
+  .posts__item {
+    flex-direction: column;
+  }
+
+  .posts__title {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .posts__image img {
+    width: 100%;
+  }
+
+  .post__text,
+.post__offer {
+    max-width: 300px;
+  }
+}
+@media (max-width: 360px) {
+  .specification::before,
+.time::before {
+    display: none;
+  }
+
+  .time {
+    display: none;
+  }
+}
+/*-------subscribe-------------*/
+.subscribe {
+  margin-top: 150px;
+  background-image: url(../img/subscribe/subscribe-fon.jpg);
+}
+
+.subscribe__body {
+  padding: 100px 15px 150px 15px;
+}
+
+.subscribe__subtitle,
+.subscribe__title {
+  text-align: center;
+}
+
+.form {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.form__body {
+  display: flex;
+}
+
+.form__input {
+  padding: 15px 170px 15px 15px;
+  margin-right: 25px;
+}
+
+@media (max-width: 550px) {
+  .form {
+    margin-top: 25px;
+  }
+
+  .form__body {
+    flex-direction: column;
+  }
+
+  .subscribe__body {
+    padding: 40px 15px 40px 15px;
+  }
+
+  .form__button {
+    text-align: center;
+  }
+
+  .form__input {
+    padding: 15px 100px 15px 15px;
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+
+  .subscribe__title {
+    font-size: 35px;
+  }
+}
+/*-----footer---------------*/
+.footer {
+  background: #1E212C;
+}
+
+.footer__body {
+  padding: 80px 15px 30px 15px;
+}
+
+.footer__up-menu {
+  display: flex;
+}
+
+.footer__menu-first {
+  flex: 1 1 40%;
+  margin-right: 30px;
+}
+
+.footer__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #FFFFFF;
+  opacity: 0.6;
+  margin: 25px 0 40px 0;
+}
+
+.footer__social {
+  display: flex;
+}
+
+.social:not(:last-child) {
+  margin-right: 15px;
+}
+
+.social g:hover {
+  opacity: 1;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer__menu-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-text,
+.footer-text a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #c9c9c9;
+  margin-top: 5px;
+}
+
+.footer__menu.menu-second,
+.footer__menu.menu-third,
+.footer__menu.menu-four {
+  flex: 1 1 20%;
+}
+
+.footer__tel,
+.footer__email {
+  position: relative;
+  margin-left: 17px;
+}
+
+.footer__email::before,
+.footer__tel::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/footer/iPhone.png);
+  width: 16px;
+  height: 16px;
+  top: 5px;
+  left: -20px;
+}
+
+.footer__email::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/footer/Mail.png);
+  width: 16px;
+  height: 16px;
+  top: 5px;
+  left: -20px;
+}
+
+@media (max-width: 780px) {
+  .footer__up-menu {
+    flex-wrap: wrap;
+  }
+
+  .footer__social {
+    margin-bottom: 30px;
+  }
+}
+.footer__down-menu {
+  display: flex;
+  margin-top: 70px;
+}
+
+.down-menu-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.text-two {
+  position: relative;
+  margin-left: 20px;
+}
+
+.text-two::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/footer/Heart.png);
+  width: 16px;
+  height: 16px;
+  top: 1px;
+  left: -18px;
+}
+
+/*--------about--------------------*/
+.about {
+  margin-top: 100px;
+}
+
+.about__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__info {
+  margin-right: 30px;
+}
+
+.about__title {
+  margin: 15px 0 45px 0;
+}
+
+.about__item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1E212C;
+  margin-bottom: 25px;
+}
+
+.about__button {
+  margin-top: 60px;
+}
+
+.about__btn {
+  margin-right: 25px;
+}
+
+@media (max-width: 1000px) {
+  .about__body {
+    flex-direction: column;
+  }
+
+  .about__image {
+    margin-top: 50px;
+  }
+
+  .about__image img {
+    width: 100%;
+  }
+
+  .about__info {
+    text-align: center;
+  }
+
+  .about__info {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 700px) {
+  .about {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 460px) {
+  .about__button {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__btn {
+    margin: 20px 0 0 0px;
+  }
+}
+.about__information {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+  align-items: center;
+}
+
+.about__information-row {
+  margin-left: 60px;
+}
+
+.information__row span {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 130%;
+  color: #FF3F3A;
+}
+
+.information__row {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #1E212C;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.about__information-image img {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .about__information {
+    flex-direction: column-reverse;
+  }
+
+  .about__information-row {
+    display: flex;
+    margin-left: 0px;
+  }
+
+  .information__row {
+    flex: 1 1 25%;
+  }
+
+  .information__row:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .about__information-image {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 800px) {
+  .about__information-row {
+    flex-wrap: wrap;
+  }
+
+  .about__information {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 500px) {
+  .about__information-row {
+    flex-direction: column;
+  }
+
+  .information__row:not(:last-child) {
+    margin-right: 0px;
+  }
+}
+/*----------values------------------*/
+.values {
+  margin-top: 150px;
+}
+
+.values__subtitle,
+.values__title {
+  text-align: center;
+}
+
+.values__row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.values__row-item {
+  text-align: center;
+  flex: 1 1 25%;
+}
+
+.row_item-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1E212C;
+  margin: 25px 0 10px 0;
+}
+
+.row_item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #787A80;
+}
+
+.values__row-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.row_item-one,
+.row_item-two,
+.row_item-three {
+  position: relative;
+}
+
+.row_item-one::before,
+.row_item-two::before,
+.row_item-three::before {
+  content: "";
+  position: absolute;
+  background-color: #9d9d9e;
+  width: 1px;
+  height: 100%;
+  top: 0px;
+  right: -15px;
+}
+
+@media (max-width: 1170px) {
+  .values__row {
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .values__row-item {
+    margin-top: 30px;
+  }
+
+  .row_item-one::before,
+.row_item-two::before,
+.row_item-three::before {
+    display: none;
+  }
+}
+/*-------directions--------------------*/
+.directions {
+  margin-top: 150px;
+}
+
+.directions__subtitle,
+.directions__title {
+  text-align: center;
+}
+
+.directions__body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -22.5px;
+}
+
+.directions__block {
+  flex: 1 1 33.333%;
+  padding: 0px 22.5px;
+  margin-top: 30px;
+}
+
+.directions__block_image img {
+  width: 100%;
+}
+
+.directions__block_info {
+  padding: 25px;
+  border: 1px solid #E5E8ED;
+  border-radius: 4px;
+}
+
+.directions__block_text {
+  margin: 20px 0 20px 0;
+}
+
+.directions__link {
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: #1E212C;
+}
+
+.directions__link::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/directions/arrow.png);
+  width: 22px;
+  height: 20px;
+  top: 1px;
+  right: -26px;
+}
+
+@media (max-width: 1100px) {
+  .directions__body {
+    flex-wrap: wrap;
+  }
+}
+/*------------studying-process----------------*/
+.studying-process {
+  margin-top: 150px;
+}
+
+.studying-process__body {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.studying-process__row {
+  flex: 1 1 50%;
+  margin-bottom: 60px;
+}
+
+.studying-process__step {
+  margin-left: 40px;
+}
+
+.step-one {
+  position: relative;
+  margin-top: 24px;
+}
+
+.step-one::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: #FF3F3A;
+  border-radius: 50%;
+  top: 2px;
+  left: -30px;
+}
+
+.step-one::after {
+  content: "";
+  position: absolute;
+  background: #9A9CA5;
+  width: 1px;
+  height: 100%;
+  top: 16px;
+  left: -26px;
+}
+
+.step__subtitle {
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 150%;
+  color: #787A80;
+}
+
+.step__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1E212C;
+  margin: 5px 0px 5px 0px;
+}
+
+.studying-process__image img {
+  width: 100%;
+}
+
+.testimonials-two {
+  background: #F4F5F7;
+  padding-top: 100px;
+}
+
+/*----------course-------------*/
+.course {
+  margin-top: 120px;
+  padding-bottom: 80px;
+}
+
+.header-one {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #FF3F3A;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.header-two {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1E212C;
+  text-align: center;
+}
+
+.about-course__body {
+  display: flex;
+}
+
+.about-course__body-first {
+  flex: 1 1 80%;
+  margin-right: 100px;
+}
+
+.about-course {
+  margin-top: 120px;
+}
+
+.about-course__text {
+  margin: 20px 0px 48px 0px;
+}
+
+.about-course__info {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: #1E212C;
+  margin-bottom: 25px;
+}
+
+.about-course__offer {
+  margin-left: 25px;
+}
+
+.easy {
+  margin-top: 30px;
+}
+
+.about-course__item {
+  background: #FFFFFF;
+  border: 1px solid #E5E8ED;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+  padding: 5px 30px 40px 30px;
+  max-width: 495px;
+}
+
+.about-course__easy_title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #1E212C;
+}
+
+.about-course__easy_item {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #FF3F3A;
+  margin: 5px 0 10px 0;
+}
+
+.about-course__button {
+  margin-top: 40px;
+}
+
+.course__button {
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .about-course__body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-course__body-second {
+    margin-top: 50px;
+  }
+
+  .about-course__body-first {
+    margin-right: 0px;
+  }
+}
+/*---------------course-curator-------------*/
+.course-curator {
+  margin-top: 120px;
+}
+
+.course-curator__body {
+  display: flex;
+}
+
+.course-curator__image {
+  flex: 1 1 50%;
+  margin-right: 100px;
+}
+
+.course-curator__info {
+  margin-top: 17px;
+}
+
+.course-curator__title {
+  margin: 10px 0 15px 0;
+}
+
+.course-curator__job-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #787A80;
+}
+
+.course-curator__row {
+  margin: 30px 0 30px 0;
+}
+
+.course-curator__item,
+.curator_item-one,
+.curator_item-two,
+.curator_item-three {
+  position: relative;
+  margin-left: 23px;
+}
+
+.curator_item-one:before,
+.curator_item-two::before,
+.curator_item-three::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 3px;
+  left: -23px;
+}
+
+.curator_item-one:before {
+  background-image: url(../img/createx/Star.png);
+}
+
+.curator_item-two::before {
+  background-image: url(../img/createx/Play.png);
+}
+
+.curator_item-three::before {
+  background-image: url(../img/createx/Profile.png);
+}
+
+.course-curator__text {
+  margin-bottom: 40px;
+}
+
+.course-curator__social-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.course-curator__social-item:hover path {
+  fill: #FF3F3A;
+}
+
+@media (max-width: 1000px) {
+  .course-curator__body {
+    flex-wrap: wrap;
+  }
+
+  .course-curator__image {
+    margin-right: 0px;
+  }
+
+  .course-curator__image img {
+    width: 100%;
+  }
+
+  .course-curator__info {
+    margin-top: 70px;
+  }
+}
+/*--------main-steps-------------*/
+.main-steps {
+  margin-top: 150px;
+}
+
+.main-steps__subtitle,
+.main-steps__title {
+  text-align: center;
+}
+
+.main-steps__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px -20px;
+}
+
+.main-steps__item {
+  padding: 0px 20px;
+}
+
+.main-steps__item-number {
+  position: relative;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #D7DADD;
+}
+
+.main-steps__item-number::before {
+  content: "";
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  background: #FF3F3A;
+  border-radius: 50%;
+  opacity: 0.12;
+  top: -13px;
+  left: -14px;
+}
+
+.main-steps__item-number:hover {
+  color: #FF3F3A;
+  transition: all 0.3s ease;
+}
+
+.main-steps__item-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1E212C;
+  margin: 20px 0 15px 0;
+}
+
+@media (max-width: 900px) {
+  .main-steps__row {
+    flex-wrap: wrap;
+  }
+
+  .main-steps__item {
+    margin-top: 50px;
+  }
+}
+.discount {
+  margin-top: 150px;
+}
+
+.discount__body {
+  background-color: #FEDECF;
+  border-radius: 4px;
+  padding: 50px 60px;
+}
+
+.discount__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.discount__title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 130%;
+  color: #1E212C;
+}
+
+.discount__calendar {
+  display: flex;
+}
+
+.discount__calendar_item {
+  margin-right: 20px;
+}
+
+.discount__calendar_number {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #1E212C;
+}
+
+.discount__calendar_day {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #1E212C;
+}
+
+.discount__form {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.discount__form_body {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.discount__form__input {
+  padding: 15px 59px 15px 15px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.discount-form__btn {
+  padding: 11px 30px;
+}
+
+@media (max-width: 1088px) {
+  .discount-form__button {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 920px) {
+  .discount__form_body {
+    flex-direction: column;
+  }
+
+  .discount__form__input {
+    margin-top: 10px;
+  }
+
+  .discount__form {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .discount__body {
+    padding: 20px 25px;
+  }
+}
+@media (max-width: 760px) {
+  .discount__item {
+    flex-direction: column;
+  }
+
+  .discount__calendar {
+    margin-top: 30px;
+  }
+}
+/*--------useful---------------------*/
+.useful {
+  margin-top: 120px;
+}
+
+.useful__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.useful__body-title {
+  margin-right: 80px;
+}
+
+.useful__subtitle {
+  margin-bottom: 15px;
+}
+
+.useful__body-info {
+  margin-top: 50px;
+}
+
+@media (max-width: 800px) {
+  .useful__body {
+    flex-wrap: wrap;
+  }
+
+  .useful__body-info {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .useful__body-title {
+    margin-right: 0px;
+  }
+}
+/*--------course-program----------------*/
+.course-program {
+  margin-top: 120px;
+}
+
+.course-program__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-program__title {
+  margin: 10px 0 30px 0;
+}
+
+.course-program__info {
+  margin: 24px 60px 0 33px;
+}
+
+.course-program__lesson {
+  margin-top: 15px;
+  display: flex;
+  position: relative;
+}
+
+.course-program__lesson::before {
+  content: "";
+  position: absolute;
+  background-color: #FF3F3A;
+  width: 20px;
+  height: 2px;
+  top: 14px;
+  left: -32px;
+}
+
+.program__lesson {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FF3F3A;
+}
+
+.program__offer {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1E212C;
+}
+
+/*--Актив--*/
+.course-program__lesson.active::before {
+  content: "";
+  position: absolute;
+  background-color: #FF3F3A;
+  width: 2px;
+  height: 21px;
+  top: 5px;
+  left: -23px;
+}
+
+.course-program__lesson.active::after {
+  content: "";
+  position: absolute;
+  background-color: #FF3F3A;
+  width: 20px;
+  height: 2px;
+  top: 14px;
+  left: -32px;
+}
+
+.course-program__text {
+  display: none;
+}
+
+@media (max-width: 1250px) {
+  .course-program__body {
+    flex-direction: column;
+  }
+
+  .course-program__info {
+    margin: 24px 0px 0 33px;
+  }
+
+  .course-program__body-image {
+    margin: 40px auto;
+  }
+
+  .course-program__body-image img {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .course-program__lesson {
+    flex-direction: column;
+  }
+}
+/*-------request-------------------*/
+.request {
+  margin-top: 120px;
+}
+
+.request__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.request__image {
+  margin-right: 70px;
+}
+
+.request__title {
+  margin: 10px 0 40px 0;
+}
+
+.request__form_body {
+  display: flex;
+  flex-direction: column;
+}
+
+.request__form_text {
+  margin: 24px 0 10px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+}
+
+.request-form__button a {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.request__form__input {
+  padding: 15px 59px 15px 15px;
+  border-radius: 4px;
+}
+
+@media (max-width: 950px) {
+  .request__body {
+    flex-direction: column;
+  }
+
+  .request__image {
+    margin: 0px auto;
+    margin-bottom: 90px;
+  }
+
+  .request__image img {
+    width: 100%;
+  }
+}
+/*------other-courses---------*/
+.other-courses {
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+
+.other-courses__title {
+  margin-bottom: 10px;
+}
+
+.item.other-courses__cards {
+  display: flex;
+}
+
+.owl-carousel.courses-carousel.owl-theme .owl-nav {
+  display: none;
+}
+
+.owl-carousel.courses-carousel.owl-theme .owl-dots .owl-dot {
+  margin-top: 20px;
+}
+
+.courses__offer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.other-courses__offer {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: #1E212C;
+  margin-right: 40px;
+}
+
+.cards-one,
+.cards-three,
+.cards-five {
+  margin-right: 30px;
+}
+
+.other-courses__cards {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.other-courses__card {
+  margin-top: 30px;
+  background: #FFFFFF;
+  border: 1px solid #E5E8ED;
+  display: flex;
+  flex: 1 1 45%;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+}
+
+@media (max-width: 1200px) {
+  .other-courses__cards {
+    flex-direction: column;
+  }
+
+  .cards-one,
+.cards-three,
+.cards-five {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 650px) {
+  .courses__offer {
+    flex-direction: column;
+  }
+
+  .other-courses__offer {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+}
+/*------event----------------*/
+.event {
+  margin-top: 120px;
+  padding-bottom: 90px;
+}
+
+.event__item {
+  font-size: 40px;
+}
+
+/*------talk-about------------*/
+.talk-about {
+  margin-top: 120px;
+}
+
+.talk-about__body {
+  display: flex;
+}
+
+.talk-about__row {
+  margin-right: 40px;
+}
+
+.talk-about__item {
+  background: #FFFFFF;
+  border: 1px solid #E5E8ED;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+  padding: 5px 30px 40px 30px;
+  max-width: 495px;
+}
+
+.talk-about__link {
+  margin-top: 30px;
+}
+
+.talk-about__link a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #FF3F3A;
+  border-bottom: 1px solid #FF3F3A;
+}
+
+@media (max-width: 1100px) {
+  .talk-about__body {
+    flex-direction: column;
+  }
+
+  .talk-about__row {
+    margin-right: 0px;
+  }
+
+  .talk-about__item {
+    margin: 40px auto;
+  }
+}
+@media (max-width: 500px) {
+  .event__item {
+    font-size: 39px;
+  }
+}
+.speaker__subtitle {
+  margin-top: 50px;
+}
+
+/*-------benefit------------*/
+.benefit {
+  margin-top: 120px;
+}
+
+.benefit__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefit__body-title {
+  margin-right: 70px;
+}
+
+.benefit__title {
+  margin-top: 30px;
+}
+
+@media (max-width: 750px) {
+  .benefit__body {
+    flex-direction: column;
+  }
+
+  .benefit__body-offer {
+    margin-top: 40px;
+  }
+
+  .benefit__body-title {
+    margin-right: 0px;
+  }
+}
+/*-----best-events-----------*/
+.best-events {
+  margin-top: 120px;
+}
+
+.best-events__body {
+  background-color: #FEDECF;
+  border-radius: 4px;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.best-events__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.best-events__image {
+  margin-right: 80px;
+}
+
+.best-events__form {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.discount-form__check {
+  display: flex;
+  margin-top: 30px;
+}
+
+.form__check-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+  margin-left: 7px;
+}
+
+@media (max-width: 1100px) {
+  .best-events__form {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .best-events-form__button {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 730px) {
+  .best-events__body {
+    flex-direction: column;
+  }
+
+  .best-events__item {
+    margin-top: 40px;
+  }
+
+  .best-events__image {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 430px) {
+  .best-events__image img {
+    width: 100%;
+  }
+}
+/*---------event-request-----------------*/
+.event-request {
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+
+.event-request__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.request__form__input {
+  border: 1px solid #D7DADD;
+  border-radius: 4px;
+}
+
+.event-request__text {
+  margin-top: 24px;
+}
+
+.event-request__image {
+  margin-top: 40px;
+  margin-left: 70px;
+}
+
+@media (max-width: 1000px) {
+  .event-request__body {
+    flex-direction: column;
+  }
+
+  .event-request__image {
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+@media (max-width: 670px) {
+  .event-request__image img {
+    width: 100%;
+  }
+}
+/*------contact----------------*/
+.contact {
+  margin-top: 100px;
+}
+
+.contact__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__info {
+  margin-right: 100px;
+}
+
+.contact__title {
+  margin-bottom: 20px;
+}
+
+.contact__row {
+  margin-left: 37px;
+}
+
+.contact__offer {
+  position: relative;
+  margin-top: 24px;
+}
+
+.contact__offer-one::before,
+.contact__offer-two::before,
+.contact__offer-third::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+}
+
+.contact__offer-one::before {
+  background-image: url(../img/contact/chat.png);
+  top: -1px;
+  left: -33px;
+}
+
+.contact__offer-two::before {
+  background-image: url(../img/contact/iPhone.png);
+  top: -1px;
+  left: -33px;
+}
+
+.contact__offer-third::before {
+  background-image: url(../img/contact/map.png);
+  top: -1px;
+  left: -33px;
+}
+
+.contact__offer_text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: #787A80;
+}
+
+.contact__offer_info a,
+.contact__offer_info {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #1E212C;
+}
+
+.contact__address {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #1E212C;
+}
+
+.contact__follow {
+  margin-top: 40px;
+}
+
+.contact__follow-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #1E212C;
+  margin-bottom: 20px;
+}
+
+.myMap {
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  .contact__body {
+    flex-direction: column;
+  }
+
+  .contact__info {
+    margin-right: 0px;
+  }
+
+  .myMap {
+    margin-top: 40px;
+    width: 100%;
+  }
+}
+/*-----any-questions------------*/
+.any-questions {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.any-questions__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1050px) {
+  .any-questions__body {
+    flex-direction: column;
+  }
+
+  .any-questions__image {
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  .any-questions {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 520px) {
+  .any-questions__image img {
+    width: 100%;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="background">
+        <body>
+          <div class="wrapper">
+            <header class="header">
+              <div class="menu container">
+                <div class="menu__logo"><img src="../img/home/logo.png" alt="Лого"></div>
+                <div class="menu__burger"></div>
+                <nav class="menu-nav">
+                  <ul class="menu__item">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                  </ul>
+                </nav>
+                <div class="menu__button"><a href="#">Get consultation </a></div>
+              </div>
+            </header>
+          </div>
+          <script src="../js/jquery-3.6.0.min.js"> </script>
+          <script src="../js/main.js"> </script>
+        </body>
+        <section class="main container">
+          <div class="main__block">
+            <div class="main__info">
+              <h1 class="main__title">Enjoy studying with Createx Online Courses</h1>
+              <div class="main__button"><a class="button__one all-button__first" href="about.html">About us</a><a class="button__two all-button__second" href="courses.html">Explore courses</a></div>
+            </div>
+            <div class="main__image"><img src="../img/home/illustration.png" alt="Картинка"></div>
+          </div>
+          <div class="main__advantage">
+            <div class="advantage-one">
+              <p class="advantage__number">1200</p>
+              <p class="advantage__text">Students graduated</p>
+            </div>
+            <div class="advantage-two">
+              <p class="advantage__number">84</p>
+              <p class="advantage__text">Completed courses</p>
+            </div>
+            <div class="advantage-three">
+              <p class="advantage__number">16</p>
+              <p class="advantage__text">Qualified tutors</p>
+            </div>
+            <div class="advantage-for">
+              <p class="advantage__number">5</p>
+              <p class="advantage__text">Years of experience</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="createx container">
+        <div class="createx__body">
+          <div class="createx__image"><img src="../img/createx/image.jpg" alt="Картинка"></div>
+          <div class="createx__info">
+            <h3 class="createx__subtitle subtitle">Who we are</h3>
+            <h2 class="createx__title title">Why Createx?</h2>
+            <div class="createx__offer-content">
+              <p class="createx__offer content-one">A fermentum in morbi pretium aliquam adipiscing donec tempus.<img class="check" src="../img/createx/check.png" alt="Галочка"></p>
+              <p class="createx__offer content-one">Vulputate placerat amet pulvinar lorem nisl.<img class="check" src="../img/createx/check.png" alt="Галочка"></p>
+              <p class="createx__offer content-one">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.<img class="check" src="../img/createx/check.png" alt="Галочка"></p>
+              <p class="createx__offer content-one">Etiam duis lobortis in fames ultrices commodo nibh.<img class="check" src="../img/createx/check.png" alt="Галочка"></p>
+              <p class="createx__offer content-one">Tincidunt sagittis neque sem ac eget.<img class="check" src="../img/createx/check.png" alt="Галочка"></p>
+              <p class="createx__offer content-one">Ultricies amet justo et eget quisque purus vulputate dapibus tortor.<img class="check" src="../img/createx/check.png" alt="Галочка"></p>
+            </div><a class="createx__button all-button__second" href="about.html">More about us</a>
+          </div>
+        </div>
+      </section>
+      <section class="featured-courses container">
+        <div class="featured-courses__info">
+          <h3 class="featured-courses__subtitle subtitle">Ready to learn?</h3>
+          <div class="featured-courses__item">
+            <h2 class="featured-courses__title title">Featured Courses</h2><a class="featured-courses__button all-button__first" href="courses.html">View all courses</a>
+          </div>
+        </div>
+        <div class="featured-courses__cards">
+          <div class="featured-courses__card card-one">
+            <div class="featured-courses__card-image"><img src="../img/featured-courses/card-1.jpg" alt="1 сотрудник"></div>
+            <div class="featured-courses__card-info">
+              <p class="featured-courses__card_job-one">Marketing</p>
+              <p class="featured-courses__card_title">The Ultimate Google Ads Training Course</p>
+              <div class="featured-courses__card_price">
+                <p class="card_price">$100</p>
+                <p class="card_name">by Jerome Bell</p>
+              </div>
+            </div>
+          </div>
+          <div class="featured-courses__card card-two">
+            <div class="featured-courses__card-image"><img src="../img/featured-courses/card-2.jpg" alt="2 сотрудник"></div>
+            <div class="featured-courses__card-info">
+              <p class="featured-courses__card_job-two">Management</p>
+              <p class="featured-courses__card_title">Prduct Management Fundamentals</p>
+              <div class="featured-courses__card_price">
+                <p class="card_price">$480</p>
+                <p class="card_name">by Marvin McKinney</p>
+              </div>
+            </div>
+          </div>
+          <div class="featured-courses__card card-three">
+            <div class="featured-courses__card-image"><img src="../img/featured-courses/card-3.jpg" alt="3 сотрудник"></div>
+            <div class="featured-courses__card-info">
+              <p class="featured-courses__card_job-three">HR & Recruting</p>
+              <p class="featured-courses__card_title">HR  Management and Analytics</p>
+              <div class="featured-courses__card_price">
+                <p class="card_price">$200</p>
+                <p class="card_name">by Leslie Alexander Li</p>
+              </div>
+            </div>
+          </div>
+          <div class="featured-courses__card card-for">
+            <div class="featured-courses__card-image"><img src="../img/featured-courses/card-4.jpg" alt="4 сотрудник"></div>
+            <div class="featured-courses__card-info">
+              <p class="featured-courses__card_job-one">Marketing</p>
+              <p class="featured-courses__card_title">Brand Management & PR Communications</p>
+              <div class="featured-courses__card_price">
+                <p class="card_price">$530</p>
+                <p class="card_name">by Kristin Watson</p>
+              </div>
+            </div>
+          </div>
+          <div class="featured-courses__card card-five">
+            <div class="featured-courses__card-image"><img src="../img/featured-courses/card-5.jpg" alt="5 сотрудник"></div>
+            <div class="featured-courses__card-info">
+              <p class="featured-courses__card_job-two">Management</p>
+              <p class="featured-courses__card_title">Business Development Management</p>
+              <div class="featured-courses__card_price">
+                <p class="card_price">$400</p>
+                <p class="card_name">by Dianne Russell</p>
+              </div>
+            </div>
+          </div>
+          <div class="featured-courses__card card-six">
+            <div class="featured-courses__card-image"><img src="../img/featured-courses/card-6.jpg" alt="6 сотрудник"></div>
+            <div class="featured-courses__card-info">
+              <p class="featured-courses__card_job-six">Design</p>
+              <p class="featured-courses__card_title">Graphic Design Basic</p>
+              <div class="featured-courses__card_price">
+                <p class="card_price">$500</p>
+                <p class="card_name">by Guy Hawkins</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="benefits container">
+        <h3 class="benefits__subtitle subtitle">Our benefits</h3>
+        <h2 class="benefits__title title">That’s how we do it</h2>
+        <div class="benefits__block tabs">
+          <ul class="benefits-tabs tabs__caption">
+            <li class="benefits-tabs__item active"><a class="benefits__item-one" href="#">Experienced Tutors</a></li>
+            <li class="benefits-tabs__item"><a class="benefits__item-two" href="#">Feedback & Support</a></li>
+            <li class="benefits-tabs__item"><a class="benefits__item-three" href="#">24/7 Online Library</a></li>
+          </ul>
+          <div class="benefits-wrap tabs__content active">
+            <!--Первая вкладка --><a class="benefits-wrap__item" href="#">
+              <div class="benefits-card__info">
+                <p class="benefits-card__title title">Only practicing tutors</p>
+                <p class="benefits-card__text text">Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.</p>
+              </div>
+              <div class="benefits-card__image"><img src="../img/benefits/illustration-1.png" alt="1 картинка"></div></a>
+          </div>
+          <div class="benefits-wrap tabs__content">
+            <!--Вторая вкладка--><a class="benefits-wrap__item" href="#">
+              <div class="benefits-card__info">
+                <p class="benefits-card__title title">Support and help</p>
+                <p class="benefits-card__text text">Placeholder text is text that has some of the characteristics of real written text, but is randomly generated or otherwise generated. It can be used to display sample fonts, generate text for testing</p>
+              </div>
+              <div class="benefits-card__image"><img src="../img/benefits/illustration-2.png" alt="2 картинка"></div></a>
+          </div>
+          <div class="benefits-wrap tabs__content">
+            <!--Третья вкладка--><a class="benefits-wrap__item" href="#">
+              <div class="benefits-card__info">
+                <p class="benefits-card__title title">Online library</p>
+                <p class="benefits-card__text text">When creating the generator, we used the well-known universal speech code. The text is randomly generated in paragraphs from two to ten sentences per paragraph, which makes the text more attractive and lively for visual and auditory perception.</p>
+              </div>
+              <div class="benefits-card__image"><img src="../img/benefits/illustration-3.png" alt="3 картинка"></div></a>
+          </div>
+        </div>
+      </section>
+      <section class="our-events">
+        <div class="our-events__body container">
+          <h3 class="our-events__subtitle subtitle">Our Events</h3>
+          <h2 class="our-events__title title">Lectures & workshops</h2>
+          <div class="our-events__cards">
+            <div class="our-events__card one-card">
+              <div class="our-events__up">
+                <div class="our-events__date">
+                  <p class="our-events__number">05</p>
+                  <p class="our-events__month">August </p>
+                  <p class="our-events__time">11:00 – 14:00</p>
+                </div>
+                <div class="our-events__button"><a class="our-events__btn all-button__first" href="courses.html">View more</a></div>
+              </div>
+              <div class="our-events__item">
+                <p class="our-event__title">Formation of the organizational structure of the company in the face of uncertainty.</p>
+                <p class="our-event__text">Onine master-class</p>
+              </div>
+            </div>
+            <div class="our-events__card one-card">
+              <div class="our-events__up">
+                <div class="our-events__date">
+                  <p class="our-events__number">24</p>
+                  <p class="our-events__month">July </p>
+                  <p class="our-events__time">11:00 – 12:30</p>
+                </div>
+                <div class="our-events__button"><a class="our-events__btn all-button__first" href="courses.html">View more</a></div>
+              </div>
+              <div class="our-events__item">
+                <p class="our-event__title">Building a customer service department. Best Practices.</p>
+                <p class="our-event__text">Onine lecture</p>
+              </div>
+            </div>
+            <div class="our-events__card one-card">
+              <div class="our-events__up">
+                <div class="our-events__date">
+                  <p class="our-events__number">16</p>
+                  <p class="our-events__month">July </p>
+                  <p class="our-events__time">10:00 – 13:00</p>
+                </div>
+                <div class="our-events__button"><a class="our-events__btn all-button__first" href="courses.html">View more</a></div>
+              </div>
+              <div class="our-events__item">
+                <p class="our-event__title">How to apply methods of speculative design in practice. Worldbuilding prototyping.</p>
+                <p class="our-event__text">Onine workshop</p>
+              </div>
+            </div>
+          </div>
+          <div class="more">
+            <h4 class="more__text">Do you want more?</h4><a class="more__button all-button__second" href="courses.html">Explore courses</a>
+          </div>
+        </div>
+      </section>
+      <section class="certificate container">
+        <div class="certificate__body">
+          <div class="certificate__info"> 
+            <h3 class="certificate__subtitle subtitle">Createx Certificate</h3>
+            <h2 class="certificate__title title">Your expertise will be confirmed</h2>
+            <p class="certificate__text text">We are accredited by international professional organizations and institutes:</p>
+            <div class="certificate__img"><img src="../img/certificate/img-1.png" alt="Картинка 1"><img src="../img/certificate/img-2.png" alt="Картинка 2"><img src="../img/certificate/img-3.png" alt="Картинка 3"></div>
+          </div>
+          <div class="certificate__image"><img src="../img/certificate/certificate.jpg" alt="Сертификат"></div>
+        </div>
+      </section>
+      <section class="tutors">
+        <div class="tutors__body container">
+          <h3 class="tutors__subtitle subtitle">Best tutors are all here</h3>
+          <h2 class="tutors__title title">Meet our team</h2>
+          <div class="our-tutors">
+            <div class="tutor__info tutor_first">
+              <div class="tutors__image"><img src="../img/tutors/tutor-1.jpg" alt="Репетитор-1"></div>
+              <p class="tutors__name">Dianne Russell</p>
+              <p class="tutors__job-title">Founder and CEO</p>
+            </div>
+            <div class="tutor__info tutor_second">
+              <div class="tutors__image"><img src="../img/tutors/tutor-2.jpg" alt="Репетитор-2"></div>
+              <p class="tutors__name">Jerome Bell</p>
+              <p class="tutors__job-title">Founder and Program Director</p>
+            </div>
+            <div class="tutor__info tutor_third">
+              <div class="tutors__image"><img src="../img/tutors/tutor-3.jpg" alt="Репетитор-3"></div>
+              <p class="tutors__name">Kristin Watson</p>
+              <p class="tutors__job-title">Marketer, Curator of Marketing Course</p>
+            </div>
+            <div class="tutor__info tutor_four">
+              <div class="tutors__image"><img src="../img/tutors/tutor-4.jpg" alt="Репетитор-4"></div>
+              <p class="tutors__name">Marvin McKinney</p>
+              <p class="tutors__job-title">PM, Curator of Management Course</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials container">
+          <div class="testimonials__body">
+            <h3 class="testimonials__subtitle subtitle">Testimonials</h3>
+            <h2 class="testimonials__title title">What our students say</h2>
+            <div class="owl-carousel owl-theme">
+              <div class="item testimonials__row">
+                <div class="test__body">
+                  <div class="testimonials__info testimonials__first">
+                    <p class="testimonials__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+                    <div class="commentator">
+                      <div class="commentator__photo"><img src="../img/testimonials/commentator-1.png" alt="Фото-1"></div>
+                      <div class="commentator_info">
+                        <p class="commentator__name">Eleanor Pena</p>
+                        <p class="commentator__text">Position, Course</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item testimonials__row">
+                <div class="test__body">
+                  <div class="testimonials__info testimonials__second">
+                    <p class="testimonials__text text">At its core, the fish text is an alternative to the traditional lorem ipsum, which causes some people to be puzzled when trying to read the fish text.</p>
+                    <div class="commentator">
+                      <div class="commentator__photo"><img src="../img/testimonials/commentator-2.png" alt="Фото-1"></div>
+                      <div class="commentator_info">
+                        <p class="commentator__name">Taisiia Shestopal</p>
+                        <p class="commentator__text">Position, Course</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item testimonials__row">
+                <div class="test__body">
+                  <div class="testimonials__info testimonials__third">
+                    <p class="testimonials__text text">When creating the generator, we used the well-known universal speech code. The text is randomly generated in paragraphs from two to ten sentences per paragraph, which makes the text more attractive and lively for visual and auditory perception.</p>
+                    <div class="commentator">
+                      <div class="commentator__photo"><img src="../img/testimonials/commentator-3.png" alt="Фото-1"></div>
+                      <div class="commentator_info">
+                        <p class="commentator__name">Anita Chong</p>
+                        <p class="commentator__text">Position, Course</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="posts container">
+        <h3 class="posts__subtitle subtitle">Our blog</h3>
+        <div class="posts__item">
+          <h2 class="posts__title title">Latest posts</h2>
+          <div class="posts__button"><a class="posts__btn all-button__second" href="event.html">Go to blog</a></div>
+        </div>
+        <div class="posts__body">
+          <div class="posts__information posts__first">
+            <div class="posts__image"><img src="../img/posts/image-1.jpg" alt="Картинка 1"></div>
+            <div class="posts__info">
+              <div class="posts__row">
+                <p class="specification">Marketing</p>
+                <p class="data">September 4, 2020</p>
+                <p class="time">36 min</p>
+              </div>
+              <p class="post__offer">What is traffic arbitrage and does it really make money?</p>
+              <p class="post__text text">Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida.</p>
+            </div>
+          </div>
+          <div class="posts__information posts__second">
+            <div class="posts__image"><img src="../img/posts/image-2.jpg" alt="Картинка 2"></div>
+            <div class="posts__info">
+              <div class="posts__row">
+                <p class="specification">Management</p>
+                <p class="data">August 25, 2020</p>
+                <p class="time">45 min</p>
+              </div>
+              <p class="post__offer">What to do and who to talk to if you want to get feedback on the product</p>
+              <p class="post__text text">Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus.</p>
+            </div>
+          </div>
+          <div class="posts__information posts__third">
+            <div class="posts__image"><img src="../img/posts/image-3.jpg" alt="Картинка 3"></div>
+            <div class="posts__info">
+              <div class="posts__row">
+                <p class="specification">Design</p>
+                <p class="data">August 8, 2020</p>
+              </div>
+              <p class="post__offer">Should you choose a creative profession if you are attracted to creativity?</p>
+              <p class="post__text text">Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subscribe">
+        <div class="subscribe__body container">
+          <h3 class="subscribe__subtitle subtitle">Don’t miss anything</h3>
+          <h2 class="subscribe__title title">Subscribe to the Createx School announcements</h2>
+          <div class="form">
+            <form class="form__body" action="#">
+              <input class="form__input" type="email" name="email" placeholder="Your working email" required><a class="form__button all-button__second" href="#">Subscribe</a>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__body container">
+          <div class="footer__up-menu">
+            <div class="footer__menu-first">
+              <div class="footer__logo"><img src="../img/footer/logo.png" alt="Лого"></div>
+              <p class="footer__text">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country. </p>
+              <div class="footer__social">
+                <div class="social facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.6">
+<path d="M17.5628 1.00458L14.7856 1C11.6654 1 9.64903 3.12509 9.64903 6.41423V8.91055H6.85662C6.61532 8.91055 6.41992 9.1115 6.41992 9.35937V12.9763C6.41992 13.2241 6.61554 13.4249 6.85662 13.4249H9.64903V22.5514C9.64903 22.7993 9.84443 23 10.0857 23H13.729C13.9703 23 14.1657 22.799 14.1657 22.5514V13.4249H17.4307C17.672 13.4249 17.8674 13.2241 17.8674 12.9763L17.8688 9.35937C17.8688 9.24036 17.8226 9.12638 17.7409 9.04215C17.6591 8.95793 17.5477 8.91055 17.4318 8.91055H14.1657V6.79439C14.1657 5.77727 14.4017 5.26094 15.6915 5.26094L17.5624 5.26025C17.8035 5.26025 17.9989 5.0593 17.9989 4.81166V1.45317C17.9989 1.20576 17.8037 1.00504 17.5628 1.00458Z" fill="white"/>
+</g>
+</svg>
+                </div>
+                <div class="social twitter"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.6">
+<path d="M22.5 5.77233C21.7271 6.10027 20.8978 6.32267 20.0264 6.42196C20.9161 5.91181 21.5972 5.10263 21.92 4.1414C21.0854 4.61383 20.1642 4.95688 19.1826 5.14285C18.3966 4.33994 17.2785 3.83984 16.0384 3.83984C13.6593 3.83984 11.7303 5.68691 11.7303 7.9637C11.7303 8.2866 11.7683 8.60199 11.8418 8.90357C8.26201 8.73141 5.08768 7.08917 2.96314 4.59372C2.59176 5.20189 2.38049 5.91053 2.38049 6.66697C2.38049 8.09814 3.14161 9.36093 4.2964 10.0997C3.5904 10.0771 2.92639 9.89116 2.34508 9.58205V9.63357C2.34508 11.6314 3.83056 13.2988 5.80024 13.6783C5.43936 13.7713 5.05882 13.8228 4.66514 13.8228C4.38696 13.8228 4.11794 13.7964 3.85417 13.7461C4.40267 15.3859 5.99315 16.5783 7.87756 16.611C6.40388 17.7167 4.54573 18.3739 2.52749 18.3739C2.17976 18.3739 1.83724 18.3537 1.5 18.3173C3.40671 19.4896 5.67036 20.1732 8.10327 20.1732C16.028 20.1732 20.3597 13.8881 20.3597 8.43741L20.3453 7.90341C21.1917 7.32537 21.9239 6.59912 22.5 5.77233Z" fill="white"/>
+</g>
+</svg>
+                </div>
+                <div class="social telegram"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.6">
+<path d="M9.63262 15.1813L9.2687 20.7653C9.78937 20.7653 10.0149 20.5213 10.2853 20.2283L12.7264 17.6833L17.7847 21.7243C18.7124 22.2883 19.366 21.9913 19.6163 20.7933L22.9365 3.8214L22.9374 3.8204C23.2317 2.3244 22.4415 1.73941 21.5377 2.1064L2.02135 10.2574C0.689406 10.8214 0.709573 11.6314 1.79493 11.9984L6.78447 13.6913L18.3742 5.78039C18.9196 5.38639 19.4155 5.60439 19.0076 5.99839L9.63262 15.1813Z" fill="white"/>
+</g>
+</svg>
+                </div>
+                <div class="social instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.6">
+<path d="M21.9804 7.88005C21.9336 6.81738 21.7617 6.0868 21.5156 5.45374C21.2616 4.78176 20.8709 4.18014 20.359 3.68002C19.8589 3.1721 19.2533 2.77743 18.5891 2.52745C17.9524 2.28127 17.2256 2.10943 16.163 2.06257C15.0923 2.01175 14.7525 2 12.0371 2C9.32172 2 8.98185 2.01175 7.9152 2.05861C6.85253 2.10546 6.12195 2.27746 5.48904 2.52348C4.81691 2.77743 4.2153 3.16814 3.71517 3.68002C3.20726 4.18014 2.81274 4.78573 2.5626 5.44992C2.31643 6.0868 2.14458 6.81341 2.09773 7.87609C2.04691 8.9467 2.03516 9.28658 2.03516 12.002C2.03516 14.7173 2.04691 15.0572 2.09376 16.1239C2.14061 17.1865 2.31261 17.9171 2.55879 18.5502C2.81274 19.2221 3.20726 19.8238 3.71517 20.3239C4.2153 20.8318 4.82088 21.2265 5.48507 21.4765C6.12195 21.7226 6.84856 21.8945 7.91139 21.9413C8.97788 21.9883 9.31791 21.9999 12.0333 21.9999C14.7486 21.9999 15.0885 21.9883 16.1552 21.9413C17.2178 21.8945 17.9484 21.7226 18.5813 21.4765C19.9254 20.9568 20.9881 19.8941 21.5078 18.5502C21.7538 17.9133 21.9258 17.1865 21.9726 16.1239C22.0195 15.0572 22.0312 14.7173 22.0312 12.002C22.0312 9.28658 22.0273 8.9467 21.9804 7.88005ZM20.1794 16.0457C20.1364 17.0225 19.9723 17.5499 19.8355 17.9015C19.4995 18.7728 18.808 19.4643 17.9367 19.8004C17.585 19.9372 17.0538 20.1012 16.0808 20.1441C15.026 20.1911 14.7096 20.2027 12.0411 20.2027C9.37255 20.2027 9.0522 20.1911 8.00113 20.1441C7.02437 20.1012 6.49693 19.9372 6.1453 19.8004C5.71171 19.6402 5.31704 19.3862 4.9967 19.0541C4.6646 18.7298 4.41065 18.3391 4.2504 17.9055C4.11365 17.5539 3.94959 17.0225 3.9067 16.0497C3.8597 14.9948 3.8481 14.6783 3.8481 12.0097C3.8481 9.34122 3.8597 9.02087 3.9067 7.96995C3.94959 6.99319 4.11365 6.46575 4.2504 6.11412C4.41065 5.68038 4.6646 5.28586 5.00067 4.96536C5.32483 4.63327 5.71553 4.37931 6.14927 4.21921C6.5009 4.08247 7.03231 3.9184 8.00509 3.87537C9.05999 3.82851 9.37652 3.81676 12.0449 3.81676C14.7174 3.81676 15.0337 3.82851 16.0848 3.87537C17.0616 3.9184 17.589 4.08247 17.9406 4.21921C18.3742 4.37931 18.7689 4.63327 19.0892 4.96536C19.4213 5.28967 19.6753 5.68038 19.8355 6.11412C19.9723 6.46575 20.1364 6.99701 20.1794 7.96995C20.2262 9.02484 20.238 9.34122 20.238 12.0097C20.238 14.6783 20.2262 14.9908 20.1794 16.0457Z" fill="white"/>
+<path d="M12.0371 6.86423C9.20069 6.86423 6.89937 9.1654 6.89937 12.002C6.89937 14.8385 9.20069 17.1397 12.0371 17.1397C14.8736 17.1397 17.1748 14.8385 17.1748 12.002C17.1748 9.1654 14.8736 6.86423 12.0371 6.86423ZM12.0371 15.3347C10.197 15.3347 8.70438 13.8422 8.70438 12.002C8.70438 10.1617 10.197 8.66924 12.0371 8.66924C13.8774 8.66924 15.3698 10.1617 15.3698 12.002C15.3698 13.8422 13.8774 15.3347 12.0371 15.3347Z" fill="white"/>
+<path d="M18.5776 6.6611C18.5776 7.32346 18.0405 7.86053 17.378 7.86053C16.7156 7.86053 16.1785 7.32346 16.1785 6.6611C16.1785 5.99858 16.7156 5.46167 17.378 5.46167C18.0405 5.46167 18.5776 5.99858 18.5776 6.6611Z" fill="white"/>
+</g>
+</svg>
+                </div>
+                <div class="social in"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.6">
+<path d="M21.995 22L22 21.9992V14.6642C22 11.0758 21.2275 8.31167 17.0325 8.31167C15.0158 8.31167 13.6625 9.41833 13.11 10.4675H13.0517V8.64667H9.07416V21.9992H13.2158V15.3875C13.2158 13.6467 13.5458 11.9633 15.7017 11.9633C17.8258 11.9633 17.8575 13.95 17.8575 15.4992V22H21.995Z" fill="white"/>
+<path d="M2.32999 8.6475H6.47666V22H2.32999V8.6475Z" fill="white"/>
+<path d="M4.40167 2C3.07583 2 2 3.07583 2 4.40167C2 5.7275 3.07583 6.82583 4.40167 6.82583C5.7275 6.82583 6.80333 5.7275 6.80333 4.40167C6.8025 3.07583 5.72667 2 4.40167 2Z" fill="white"/>
+</g>
+</svg>
+                </div>
+              </div>
+            </div>
+            <div class="footer__menu menu-second"> 
+              <p class="footer__menu-title footer-title">SITE MAP</p>
+              <ul class="footer__menu-item">
+                <li class="footer__menu-link footer-text"><a href="about.html">About Us</a></li>
+                <li class="footer__menu-link footer-text"><a href="courses.html">Courses</a></li>
+                <li class="footer__menu-link footer-text"><a href="event.html">Events</a></li>
+                <li class="footer__menu-link footer-text"><a href="event.html">Blog</a></li>
+                <li class="footer__menu-link footer-text"><a href="contacts.html">Contacts</a></li>
+              </ul>
+            </div>
+            <div class="footer__menu menu-third">
+              <p class="footer__menu-title footer-title">COURSES</p>
+              <div class="footer__menu-item">
+                <p class="footer__menu-link footer-text">Marketing</p>
+                <p class="footer__menu-link footer-text">Management</p>
+                <p class="footer__menu-link footer-text">HR & Recruting</p>
+                <p class="footer__menu-link footer-text">Design</p>
+                <p class="footer__menu-link footer-text">Development</p>
+              </div>
+            </div>
+            <div class="footer__menu menu-four">
+              <p class="footer__menu-title footer-title">CONTACT US</p>
+              <div class="footer__menu-item"><a class="footer__tel footer-text" href="tel:4055550128">(405) 555-0128</a><a class="footer__email footer-text" href="email:hello@createx.com">hello@createx.com</a></div>
+            </div>
+          </div>
+          <div class="footer__down-menu">
+            <p class="down-menu-text">© All rights reserved.</p>
+            <p class="down-menu-text text-two">Made with by Createx Studio </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/owl.carousel.min.js"> </script>
+    <script src="../js/style.js"></script>
+  </body>
+</html>

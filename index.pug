@@ -1,0 +1,352 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Курсы
+
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;900&display=swap" rel="stylesheet")
+
+        link(rel="icon" href="../Favicon.png" type="image/x-icon")
+        style 
+            include style/owl.carousel.min.css
+            include style/owl.theme.default.min.css
+            include dist/style.css
+    body
+        div.wrapper
+            div.background
+                include modules/header
+                section.main.container
+                    .main__block
+                        .main__info
+                            h1.main__title Enjoy studying with Createx Online Courses
+                            .main__button
+                                a(href="about.html").button__one.all-button__first About us
+                                a(href="courses.html").button__two.all-button__second Explore courses
+                        .main__image
+                            img(src="../img/home/illustration.png", alt="Картинка")
+                    .main__advantage
+                        .advantage-one
+                            p.advantage__number 1200
+                            p.advantage__text Students graduated
+                        .advantage-two
+                            p.advantage__number 84
+                            p.advantage__text Completed courses
+                        .advantage-three
+                            p.advantage__number 16
+                            p.advantage__text Qualified tutors
+                        .advantage-for
+                            p.advantage__number 5
+                            p.advantage__text Years of experience
+            section.createx.container
+                .createx__body
+                    .createx__image
+                        img(src="../img/createx/image.jpg", alt="Картинка")
+                    .createx__info
+                        h3.createx__subtitle.subtitle Who we are
+                        h2.createx__title.title Why Createx?
+                        .createx__offer-content
+                            p.createx__offer.content-one A fermentum in morbi pretium aliquam adipiscing donec tempus.
+                                img(src="../img/createx/check.png", alt="Галочка").check
+                            p.createx__offer.content-one Vulputate placerat amet pulvinar lorem nisl.
+                                img(src="../img/createx/check.png", alt="Галочка").check
+                            p.createx__offer.content-one Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
+                                img(src="../img/createx/check.png", alt="Галочка").check
+                            p.createx__offer.content-one Etiam duis lobortis in fames ultrices commodo nibh.
+                                img(src="../img/createx/check.png", alt="Галочка").check
+                            p.createx__offer.content-one Tincidunt sagittis neque sem ac eget.
+                                img(src="../img/createx/check.png", alt="Галочка").check
+                            p.createx__offer.content-one Ultricies amet justo et eget quisque purus vulputate dapibus tortor.
+                                img(src="../img/createx/check.png", alt="Галочка").check
+                        a(href="about.html").createx__button.all-button__second More about us
+            section.featured-courses.container
+                .featured-courses__info
+                    h3.featured-courses__subtitle.subtitle Ready to learn?
+                    .featured-courses__item
+                        h2.featured-courses__title.title Featured Courses
+                        a(href="courses.html").featured-courses__button.all-button__first View all courses
+                .featured-courses__cards
+                    .featured-courses__card.card-one
+                        .featured-courses__card-image
+                            img(src="../img/featured-courses/card-1.jpg", alt="1 сотрудник")
+                        .featured-courses__card-info
+                            p.featured-courses__card_job-one Marketing
+                            p.featured-courses__card_title The Ultimate Google Ads Training Course
+                            .featured-courses__card_price
+                                p.card_price $100
+                                p.card_name by Jerome Bell
+
+                    .featured-courses__card.card-two
+                        .featured-courses__card-image
+                            img(src="../img/featured-courses/card-2.jpg", alt="2 сотрудник")
+                        .featured-courses__card-info
+                            p.featured-courses__card_job-two Management
+                            p.featured-courses__card_title Prduct Management Fundamentals
+                            .featured-courses__card_price
+                                p.card_price $480
+                                p.card_name by Marvin McKinney
+
+                    .featured-courses__card.card-three
+                        .featured-courses__card-image
+                            img(src="../img/featured-courses/card-3.jpg", alt="3 сотрудник")
+                        .featured-courses__card-info
+                            p.featured-courses__card_job-three HR & Recruting
+                            p.featured-courses__card_title HR  Management and Analytics
+                            .featured-courses__card_price
+                                p.card_price $200
+                                p.card_name by Leslie Alexander Li
+
+                    .featured-courses__card.card-for
+                        .featured-courses__card-image
+                            img(src="../img/featured-courses/card-4.jpg", alt="4 сотрудник")
+                        .featured-courses__card-info
+                            p.featured-courses__card_job-one Marketing
+                            p.featured-courses__card_title Brand Management & PR Communications
+                            .featured-courses__card_price
+                                p.card_price $530
+                                p.card_name by Kristin Watson
+
+                    .featured-courses__card.card-five
+                        .featured-courses__card-image
+                            img(src="../img/featured-courses/card-5.jpg", alt="5 сотрудник")
+                        .featured-courses__card-info
+                            p.featured-courses__card_job-two Management
+                            p.featured-courses__card_title Business Development Management
+                            .featured-courses__card_price
+                                p.card_price $400
+                                p.card_name by Dianne Russell
+
+                    .featured-courses__card.card-six
+                        .featured-courses__card-image
+                            img(src="../img/featured-courses/card-6.jpg", alt="6 сотрудник")
+                        .featured-courses__card-info
+                            p.featured-courses__card_job-six Design
+                            p.featured-courses__card_title Graphic Design Basic
+                            .featured-courses__card_price
+                                p.card_price $500
+                                p.card_name by Guy Hawkins
+            section.benefits.container
+                h3.benefits__subtitle.subtitle Our benefits
+                h2.benefits__title.title That’s how we do it
+                .benefits__block.tabs
+                    ul.benefits-tabs.tabs__caption
+                        li.benefits-tabs__item.active
+                            a(href="#").benefits__item-one Experienced Tutors
+                        li.benefits-tabs__item
+                            a(href="#").benefits__item-two Feedback & Support
+                        li.benefits-tabs__item
+                            a(href="#").benefits__item-three 24/7 Online Library
+                    div.benefits-wrap.tabs__content.active
+                        //Первая вкладка 
+                        a(href="#").benefits-wrap__item
+                            div.benefits-card__info
+                                p.benefits-card__title.title Only practicing tutors
+                                p.benefits-card__text.text Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.
+                            div.benefits-card__image
+                                img(src="../img/benefits/illustration-1.png", alt="1 картинка")
+
+                    div.benefits-wrap.tabs__content
+                        //Вторая вкладка
+                        a(href="#").benefits-wrap__item
+                            div.benefits-card__info
+                                p.benefits-card__title.title Support and help
+                                p.benefits-card__text.text Placeholder text is text that has some of the characteristics of real written text, but is randomly generated or otherwise generated. It can be used to display sample fonts, generate text for testing
+                            div.benefits-card__image
+                                img(src="../img/benefits/illustration-2.png", alt="2 картинка")
+
+                    div.benefits-wrap.tabs__content
+                        //Третья вкладка
+                        a(href="#").benefits-wrap__item
+                            div.benefits-card__info
+                                p.benefits-card__title.title Online library
+                                p.benefits-card__text.text When creating the generator, we used the well-known universal speech code. The text is randomly generated in paragraphs from two to ten sentences per paragraph, which makes the text more attractive and lively for visual and auditory perception.
+                            div.benefits-card__image
+                                img(src="../img/benefits/illustration-3.png", alt="3 картинка")
+            section.our-events
+                .our-events__body.container
+                    h3.our-events__subtitle.subtitle Our Events
+                    h2.our-events__title.title Lectures & workshops
+                    .our-events__cards
+                        .our-events__card.one-card
+                            .our-events__up
+                                .our-events__date
+                                    p.our-events__number 05
+                                    p.our-events__month August 
+                                    p.our-events__time 11:00 – 14:00
+                                .our-events__button
+                                    a(href="courses.html").our-events__btn.all-button__first View more
+                            .our-events__item
+                                p.our-event__title Formation of the organizational structure of the company in the face of uncertainty.
+                                p.our-event__text Onine master-class
+
+                        .our-events__card.one-card
+                                .our-events__up
+                                    .our-events__date
+                                        p.our-events__number 24
+                                        p.our-events__month July 
+                                        p.our-events__time 11:00 – 12:30
+                                    .our-events__button
+                                        a(href="courses.html").our-events__btn.all-button__first View more
+                                .our-events__item
+                                    p.our-event__title Building a customer service department. Best Practices.
+                                    p.our-event__text Onine lecture
+
+                        .our-events__card.one-card
+                                .our-events__up
+                                    .our-events__date
+                                        p.our-events__number 16
+                                        p.our-events__month July 
+                                        p.our-events__time 10:00 – 13:00
+                                    .our-events__button
+                                        a(href="courses.html").our-events__btn.all-button__first View more
+                                .our-events__item
+                                    p.our-event__title How to apply methods of speculative design in practice. Worldbuilding prototyping.
+                                    p.our-event__text Onine workshop
+
+
+                    .more
+                        h4.more__text Do you want more?
+                        a(href="courses.html").more__button.all-button__second Explore courses
+            section.certificate.container
+                .certificate__body
+                    .certificate__info 
+                        h3.certificate__subtitle.subtitle Createx Certificate
+                        h2.certificate__title.title Your expertise will be confirmed
+                        p.certificate__text.text We are accredited by international professional organizations and institutes:
+                        .certificate__img
+                            img(src="../img/certificate/img-1.png", alt="Картинка 1")
+                            img(src="../img/certificate/img-2.png", alt="Картинка 2")
+                            img(src="../img/certificate/img-3.png", alt="Картинка 3")
+                    .certificate__image
+                        img(src="../img/certificate/certificate.jpg", alt="Сертификат")
+            section.tutors
+                .tutors__body.container
+                    h3.tutors__subtitle.subtitle Best tutors are all here
+                    h2.tutors__title.title Meet our team
+                    .our-tutors
+                        .tutor__info.tutor_first
+                            .tutors__image
+                                img(src="../img/tutors/tutor-1.jpg", alt="Репетитор-1")
+                            p.tutors__name Dianne Russell
+                            p.tutors__job-title Founder and CEO
+
+                        .tutor__info.tutor_second
+                            .tutors__image
+                                img(src="../img/tutors/tutor-2.jpg", alt="Репетитор-2")
+                            p.tutors__name Jerome Bell
+                            p.tutors__job-title Founder and Program Director
+
+                        .tutor__info.tutor_third
+                            .tutors__image
+                                img(src="../img/tutors/tutor-3.jpg", alt="Репетитор-3")
+                            p.tutors__name Kristin Watson
+                            p.tutors__job-title Marketer, Curator of Marketing Course
+                            
+                        .tutor__info.tutor_four
+                            .tutors__image
+                                img(src="../img/tutors/tutor-4.jpg", alt="Репетитор-4")
+                            p.tutors__name Marvin McKinney
+                            p.tutors__job-title PM, Curator of Management Course
+
+                .testimonials.container
+                    .testimonials__body
+                        h3.testimonials__subtitle.subtitle Testimonials
+                        h2.testimonials__title.title What our students say
+
+                        .owl-carousel.owl-theme
+                            //-First slide
+                            .item.testimonials__row
+                                .test__body
+                                    .testimonials__info.testimonials__first
+                                        p.testimonials__text.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                                        .commentator
+                                            .commentator__photo
+                                                img(src="../img/testimonials/commentator-1.png", alt="Фото-1")
+                                            .commentator_info
+                                                p.commentator__name Eleanor Pena
+                                                p.commentator__text Position, Course
+
+                            //-Second slide
+                            .item.testimonials__row
+                                .test__body
+                                    .testimonials__info.testimonials__second
+                                        p.testimonials__text.text At its core, the fish text is an alternative to the traditional lorem ipsum, which causes some people to be puzzled when trying to read the fish text.
+                                        .commentator
+                                            .commentator__photo
+                                                img(src="../img/testimonials/commentator-2.png", alt="Фото-1")
+                                            .commentator_info
+                                                p.commentator__name Taisiia Shestopal
+                                                p.commentator__text Position, Course
+
+
+                            //-Third slide
+                            .item.testimonials__row
+                                .test__body
+                                    .testimonials__info.testimonials__third
+                                        p.testimonials__text.text When creating the generator, we used the well-known universal speech code. The text is randomly generated in paragraphs from two to ten sentences per paragraph, which makes the text more attractive and lively for visual and auditory perception.
+                                        .commentator
+                                            .commentator__photo
+                                                img(src="../img/testimonials/commentator-3.png", alt="Фото-1")
+                                            .commentator_info
+                                                p.commentator__name Anita Chong
+                                                p.commentator__text Position, Course
+            section.posts.container
+                h3.posts__subtitle.subtitle Our blog
+                .posts__item
+                    h2.posts__title.title Latest posts
+                    .posts__button
+                        a(href="event.html").posts__btn.all-button__second Go to blog
+                .posts__body
+                    .posts__information.posts__first
+                        .posts__image
+                            img(src="../img/posts/image-1.jpg", alt="Картинка 1")
+                        .posts__info
+                            .posts__row
+                                p.specification Marketing
+                                p.data September 4, 2020
+                                p.time 36 min
+                            p.post__offer What is traffic arbitrage and does it really make money?
+                            p.post__text.text Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida.
+
+
+                    .posts__information.posts__second
+                        .posts__image
+                            img(src="../img/posts/image-2.jpg", alt="Картинка 2")
+                        .posts__info
+                            .posts__row
+                                p.specification Management
+                                p.data August 25, 2020
+                                p.time 45 min
+                            p.post__offer What to do and who to talk to if you want to get feedback on the product
+                            p.post__text.text Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus.
+
+
+                    .posts__information.posts__third
+                        .posts__image
+                            img(src="../img/posts/image-3.jpg", alt="Картинка 3")
+                        .posts__info
+                            .posts__row
+                                p.specification Design
+                                p.data August 8, 2020
+                            p.post__offer Should you choose a creative profession if you are attracted to creativity?
+                            p.post__text.text Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices.
+            section.subscribe
+                .subscribe__body.container
+                    h3.subscribe__subtitle.subtitle Don’t miss anything
+                    h2.subscribe__title.title Subscribe to the Createx School announcements
+
+                    .form
+                        form(action="#").form__body
+                            input(type="email" name="email" placeholder="Your working email" required).form__input
+                            a(href="#").form__button.all-button__second Subscribe
+
+
+            include modules/footer
+
+
+        script(src="../js/jquery-3.6.0.min.js")
+        script(src="../js/owl.carousel.min.js") 
+        script(src="../js/style.js")

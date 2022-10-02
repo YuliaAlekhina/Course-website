@@ -1,0 +1,264 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Курсы
+
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;900&display=swap" rel="stylesheet")
+
+        link(rel="icon" href="../Favicon.png" type="image/x-icon")
+        style 
+            include style/owl.carousel.min.css
+            include style/owl.theme.default.min.css
+            include dist/style.css
+    body
+        div.wrapper
+            include modules/header
+            section.about.container
+                .about__body
+                    .about__info
+                        h3.about__subtitle.subtitle About us
+                        h2.about__title.title Createx Online School
+                        p.about__item Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts.
+                        p.about__text.text We provide relevant approaches to online learning, internships and employment in the largest companies in the country. Our educational programs help you get a new specialty from scratch. During your studies, we will help you find a job. Check the courses and online events that we organise.
+                        .about__button
+                            a(href="event.html").about__btn.all-button__first Explore events
+                            a(href="courses.html").about__btn.all-button__second Browse courses
+
+                    .about__image
+                        img(src="../img/about/about-fon.png", alt="Картинка")
+                .about__information
+                    .about__information-image
+                        img(src="../img/about/about-image.jpg", alt="Картинка")
+                    .about__information-row
+                        p.information__row.row-one <span>1200</span> students graduated
+                        p.information__row.row-two <span>84</span> completed courses
+                        p.information__row.row-three <span>16</span> qualified tutors
+                        p.information__row.row-four <span>5</span> years of experience
+            section.values.container
+                .values__body
+                    h3.values__subtitle.subtitle We always stand for
+                    h2.values__title.title Our core values
+                    .values__row
+                        .values__row-item.row_item-one
+                            .row_item-image
+                                img(src="../img/values/values-1.png", alt="картинка1")
+                            p.row_item-title Structured Approach
+                            p.row_item-text Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris.
+
+                        .values__row-item.row_item-two
+                            .row_item-image
+                                img(src="../img/values/values-2.png", alt="картинка2")
+                            p.row_item-title Professional Feedbacks
+                            p.row_item-text Culpa nostrud commodo ea consequat reprehenderit aliquip. 
+
+
+                        .values__row-item.row_item-three
+                            .row_item-image
+                                img(src="../img/values/values-3.png", alt="картинка3")
+                            p.row_item-title Efficiency
+                            p.row_item-text Viverra scelerisque consequat net. Adipisicing esse consequat. 
+
+
+                        .values__row-item.row_item-four
+                            .row_item-image
+                                img(src="../img/values/values-4.png", alt="картинка4")
+                            p.row_item-title Flexible Shedule
+                            p.row_item-text Aute eiusmod dolore dolore deserunt veniam ad deserunt. 
+            section.directions.container
+                h3.directions__subtitle.subtitle our main directions
+                h2.directions__title.title What do we teach
+                .directions__body
+                    .directions__block.block-first
+                        .directions__block_image
+                            img(src="../img/directions/image-1.jpg", alt="Картинка-1")
+                        .directions__block_info
+                            p.featured-courses__card_job-one Marketing
+                            p.directions__block_text.text Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.
+                            .directions__block_item
+                                a(href="courses.html").directions__link Check courses
+
+
+
+                    .directions__block.block-second
+                        .directions__block_image
+                            img(src="../img/directions/image-2.jpg", alt="Картинка-2")
+                        .directions__block_info
+                            p.featured-courses__card_job-two Management
+                            p.directions__block_text.text Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.
+                            .directions__block_item
+                                a(href="courses.html").directions__link Check courses
+
+
+
+
+                    .directions__block.block-three
+                        .directions__block_image
+                            img(src="../img/directions/image-3.jpg", alt="Картинка-3")
+                        .directions__block_info
+                            p.featured-courses__card_job-three HR & Recruting
+                            p.directions__block_text.text Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.
+                            .directions__block_item
+                                a(href="courses.html").directions__link Check courses
+
+
+                    .directions__block.block-three
+                        .directions__block_image
+                            img(src="../img/directions/image-4.jpg", alt="Картинка-4")
+                        .directions__block_info
+                            p.featured-courses__card_job-six Design
+                            p.directions__block_text.text Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.
+                            .directions__block_item
+                                a(href="courses.html").directions__link Check courses
+
+
+
+                    .directions__block.block-three
+                        .directions__block_image
+                            img(src="../img/directions/image-5.jpg", alt="Картинка-5")
+                        .directions__block_info
+                            p.featured-courses__card_job-one Marketing
+                            p.directions__block_text.text Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.
+                            .directions__block_item
+                                a(href="courses.html").directions__link Check courses
+
+
+
+                    .directions__block.block-three
+                        .directions__block_image
+                            img(src="../img/directions/image-2.jpg", alt="Картинка-6")
+                        .directions__block_info
+                            p.featured-courses__card_job-three HR & Recruting
+                            p.directions__block_text.text Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.
+                            .directions__block_item
+                                a(href="courses.html").directions__link Check courses
+            section.studying-process.container
+                h3.studying-process__subtitle.subtitle Studying process
+                h2.studying-process__title.title That’s how we do it
+                .studying-process__body
+                    .studying-process__row
+                        .studying-process__step.step-one
+                            p.step__subtitle STEP 1
+                            p.step__title Watching online video lectures
+                            p.step__text.text Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa neque.
+
+                        .studying-process__step.step-one
+                            p.step__subtitle STEP 2
+                            p.step__title Passing test
+                            p.step__text.text Facilisis pellentesque quis accumsan ultricies. Eu egestas eget feugiat lacus, amet, sollicitudin egestas laoreet etiam. 
+
+                        .studying-process__step.step-one
+                            p.step__subtitle STEP 3
+                            p.step__title Curator’s feedback
+                            p.step__text.text Eget amet, enim pharetra leo egestas nisi, odio imperdiet facilisis. Aliquet orci varius volutpat egestas facilisi lobortis. 
+
+                        .studying-process__step.step-one
+                            p.step__subtitle STEP 4
+                            p.step__title Corrections if needed
+                            p.step__text.text Non tempor pulvinar tincidunt aliquam. Placerat ultricies malesuada dui auctor.
+
+                    .studying-process__image
+                        img(src="../img/studying-process/image.png", alt="Картинка")                       
+            section.testimonials.testimonials-two
+                    .testimonials__body.container
+                        h3.testimonials__subtitle.subtitle Testimonials
+                        h2.testimonials__title.title What our students say
+
+                        .owl-carousel.owl-theme
+                            //-First slide
+                            .item.testimonials__row
+                                .test__body
+                                    .testimonials__info.testimonials__first
+                                        p.testimonials__text.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                                        .commentator
+                                            .commentator__photo
+                                                img(src="../img/testimonials/commentator-1.png", alt="Фото-1")
+                                            .commentator_info
+                                                p.commentator__name Eleanor Pena
+                                                p.commentator__text Position, Course
+
+                            //-Second slide
+                            .item.testimonials__row
+                                .test__body
+                                    .testimonials__info.testimonials__second
+                                        p.testimonials__text.text At its core, the fish text is an alternative to the traditional lorem ipsum, which causes some people to be puzzled when trying to read the fish text.
+                                        .commentator
+                                            .commentator__photo
+                                                img(src="../img/testimonials/commentator-2.png", alt="Фото-1")
+                                            .commentator_info
+                                                p.commentator__name Taisiia Shestopal
+                                                p.commentator__text Position, Course
+
+
+                            //-Third slide
+                            .item.testimonials__row
+                                .test__body
+                                    .testimonials__info.testimonials__third
+                                        p.testimonials__text.text When creating the generator, we used the well-known universal speech code. The text is randomly generated in paragraphs from two to ten sentences per paragraph, which makes the text more attractive and lively for visual and auditory perception.
+                                        .commentator
+                                            .commentator__photo
+                                                img(src="../img/testimonials/commentator-3.png", alt="Фото-1")
+                                            .commentator_info
+                                                p.commentator__name Anita Chong
+                                                p.commentator__text Position, Course
+            section.posts.container
+                h3.posts__subtitle.subtitle Our blog
+                .posts__item
+                    h2.posts__title.title Latest posts
+                    .posts__button
+                        a(href="event.html").posts__btn.all-button__second Go to blog
+                .posts__body
+                    .posts__information.posts__first
+                        .posts__image
+                            img(src="../img/posts/image-1.jpg", alt="Картинка 1")
+                        .posts__info
+                            .posts__row
+                                p.specification Marketing
+                                p.data September 4, 2020
+                                p.time 36 min
+                            p.post__offer What is traffic arbitrage and does it really make money?
+                            p.post__text.text Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida.
+
+
+                    .posts__information.posts__second
+                        .posts__image
+                            img(src="../img/posts/image-2.jpg", alt="Картинка 2")
+                        .posts__info
+                            .posts__row
+                                p.specification Management
+                                p.data August 25, 2020
+                                p.time 45 min
+                            p.post__offer What to do and who to talk to if you want to get feedback on the product
+                            p.post__text.text Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus.
+
+
+                    .posts__information.posts__third
+                        .posts__image
+                            img(src="../img/posts/image-3.jpg", alt="Картинка 3")
+                        .posts__info
+                            .posts__row
+                                p.specification Design
+                                p.data August 8, 2020
+                            p.post__offer Should you choose a creative profession if you are attracted to creativity?
+                            p.post__text.text Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices.
+            section.subscribe
+                .subscribe__body.container
+                    h3.subscribe__subtitle.subtitle Don’t miss anything
+                    h2.subscribe__title.title Subscribe to the Createx School announcements
+
+                    .form
+                        form(action="#").form__body
+                            input(type="email" name="email" placeholder="Your working email" required).form__input
+                            a(href="#").form__button.all-button__second Subscribe
+            include modules/footer
+
+
+
+
+        script(src="../js/jquery-3.6.0.min.js")
+        script(src="../js/owl.carousel.min.js") 
+        script(src="../js/style.js")

@@ -1,0 +1,339 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Курсы
+
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;900&display=swap" rel="stylesheet")
+
+        link(rel="icon" href="../Favicon.png" type="image/x-icon")
+        style 
+            include style/owl.carousel.min.css
+            include style/owl.theme.default.min.css
+            include dist/style.css
+    body
+        div.wrapper
+            div.background
+                include modules/header
+                section.course.container
+                    h3.course__title.header-one course
+                    h2.course__item.header-two User Experience. Principles of Human-Centered Design
+            section.about-course.container
+                .about-course__body
+                    .about-course__body-first
+                        h4.about-course__title.title About the course
+                        p.about-course__text.text Bibendum vulputate adipiscing venenatis at est, a eu tincidunt. Leo aenean congue in sagittis, felis maecenas amet varius at. Pellentesque euismod in faucibus at elementum. Tellus maecenas libero est tempus sit cras at malesuada diam. Consequat senectus dictumst non hac dignissim montes, pretium, egestas molestie. Sed magna aliquet ornare nibh vel lectus diam eget pretium. Lorem risus nunc tincidunt tortor, mi nulla pellentesque
+                        p.about-course__info You will learn:
+                        .about-course__offer
+                            p.createx__offer.content-one A fermentum in morbi pretium aliquam adipiscing donec tempus.
+                                img(src="../img/createx/check.png", alt="Галочка").check
+                            p.createx__offer.content-one Vulputate placerat amet pulvinar lorem nisl.
+                                img(src="../img/createx/check.png", alt="Галочка").check
+                            p.createx__offer.content-one Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
+                                img(src="../img/createx/check.png", alt="Галочка").check
+                            p.createx__offer.content-one Etiam duis lobortis in fames ultrices commodo nibh.
+                                img(src="../img/createx/check.png", alt="Галочка").check
+                            p.createx__offer.content-one Fringilla in nec risus congue venenatis pretium posuere nec.
+                                img(src="../img/createx/check.png", alt="Галочка").check
+                            p.createx__offer.content-one Cursus eu pretium, vulputate tempus quam massa sed at.
+                                img(src="../img/createx/check.png", alt="Галочка").check
+
+                    .about-course__body-second
+                        .about-course__item
+                            .about-course__dates.easy
+                                p.about-course__easy_title Dates
+                                p.about-course__easy_item Sept 7 – Nov 2
+                                p.about-course__easy_text.text Metus turpis sit lorem lacus, in elit tellus lacus.
+
+                            .about-course__duration.easy
+                                p.about-course__easy_title Duration
+                                p.about-course__easy_item 2 months – 8 lessons
+                                p.about-course__easy_text.text Rhoncus pellentesque auctor auctor orci vulputate faucibus quis ut.
+
+                            .about-course__price.easy
+                                p.about-course__easy_title Price
+                                p.about-course__easy_item $120 per month
+                                p.about-course__easy_text.text Nulla sem adipiscing adipiscing felis fringilla. Adipiscing mauris quam ac elit tristique dis.
+                            .about-course__button
+                                a(href="courses.html").course__button.all-button__second Join the course
+            section.course-curator.container
+                .course-curator__body
+                    .course-curator__image
+                        img(src="../img/createx/curator-image.png", alt="Куратор")
+                    .course-curator__info
+                        h3.course-curator__subtitle.subtitle Course curator
+                        h2.course-curator__title.title Cody Fisher
+                        p.course-curator__job-title Senior UX designer in IT Product Company
+                        .course-curator__row
+                            p.course-curator__item.curator_item-one 4.9 rate
+                            p.course-curator__item.curator_item-two 4 courses
+                            p.course-curator__item.curator_item-three 350 students
+                        p.course-curator__text.text Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.
+                        .course-curator__social
+                            a(href="#").course-curator__social-item
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5628 1.00458L14.7856 1C11.6654 1 9.64903 3.12509 9.64903 6.41423V8.91055H6.85662C6.61532 8.91055 6.41992 9.1115 6.41992 9.35937V12.9763C6.41992 13.2241 6.61554 13.4249 6.85662 13.4249H9.64903V22.5514C9.64903 22.7993 9.84443 23 10.0857 23H13.729C13.9703 23 14.1657 22.799 14.1657 22.5514V13.4249H17.4307C17.672 13.4249 17.8674 13.2241 17.8674 12.9763L17.8688 9.35937C17.8688 9.24036 17.8226 9.12638 17.7409 9.04215C17.6591 8.95793 17.5477 8.91055 17.4318 8.91055H14.1657V6.79439C14.1657 5.77728 14.4017 5.26094 15.6915 5.26094L17.5624 5.26025C17.8035 5.26025 17.9989 5.0593 17.9989 4.81166V1.45317C17.9989 1.20576 17.8037 1.00504 17.5628 1.00458Z" fill="#787A80"/>
+                                </svg>
+                            a(href="#").course-curator__social-item
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_0_5233)">
+                                    <path d="M12.3652 15.1437C12.3652 13.1724 11.486 11.7153 9.66971 11.1692C10.9949 10.4961 11.6861 9.47637 11.6861 7.8902C11.6861 4.76268 9.49368 4 6.96423 4H0V19.7027H7.15926C9.84374 19.7027 12.3652 18.3341 12.3652 15.1437ZM3.24657 6.68058H6.29311C7.46432 6.68058 8.51851 7.03045 8.51851 8.47475C8.51851 9.8081 7.69836 10.3446 6.53816 10.3446H3.24657V6.68058ZM3.24557 17.036V12.7116H6.7842C8.21345 12.7116 9.11761 13.3452 9.11761 14.9538C9.11761 16.54 8.03842 17.036 6.71719 17.036H3.24557Z" fill="#787A80"/>
+                                    <path d="M18.7993 20C21.3537 20 23.008 18.7765 23.8041 16.1759H21.2117C20.9326 17.1466 19.7824 17.6597 18.8903 17.6597C17.169 17.6597 16.2648 16.5877 16.2648 14.7658H23.9792C24.2232 11.1198 22.3189 8.01257 18.7983 8.01257C15.5387 8.01257 13.3263 10.6174 13.3263 14.0297C13.3263 17.5711 15.4227 20 18.7993 20ZM18.7073 10.3721C20.1825 10.3721 20.9246 11.2937 21.0487 12.8009H16.2688C16.3658 11.3065 17.299 10.3721 18.7073 10.3721Z" fill="#787A80"/>
+                                    <path d="M15.6701 4.82507H21.6591V6.37177H15.6701V4.82507Z" fill="#787A80"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_0_5233">
+                                    <rect width="24" height="24" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            a(href="#").course-curator__social-item
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.5 5.77258C21.7271 6.10051 20.8978 6.32292 20.0264 6.42221C20.9161 5.91205 21.5972 5.10287 21.92 4.14164C21.0854 4.61408 20.1642 4.95713 19.1826 5.14309C18.3966 4.34019 17.2785 3.84009 16.0384 3.84009C13.6593 3.84009 11.7303 5.68715 11.7303 7.96394C11.7303 8.28685 11.7683 8.60223 11.8418 8.90382C8.26201 8.73165 5.08768 7.08941 2.96314 4.59397C2.59176 5.20213 2.38049 5.91077 2.38049 6.66721C2.38049 8.09839 3.14161 9.36117 4.2964 10.1C3.5904 10.0774 2.92639 9.89141 2.34508 9.5823V9.63381C2.34508 11.6317 3.83056 13.299 5.80024 13.6785C5.43936 13.7715 5.05882 13.823 4.66514 13.823C4.38696 13.823 4.11794 13.7966 3.85417 13.7464C4.40267 15.3861 5.99315 16.5785 7.87756 16.6112C6.40388 17.7169 4.54573 18.3741 2.52749 18.3741C2.17976 18.3741 1.83724 18.354 1.5 18.3176C3.40671 19.4899 5.67036 20.1734 8.10327 20.1734C16.028 20.1734 20.3597 13.8884 20.3597 8.43766L20.3453 7.90365C21.1917 7.32561 21.9239 6.59937 22.5 5.77258Z" fill="#787A80"/>
+                                </svg>
+            section.main-steps.container
+                .main-steps__body
+                    h3.main-steps__subtitle.subtitle Main steps
+                    h2.main-steps__title.title Online learning process
+                    .main-steps__row
+                        .main-steps__item
+                            .main-steps__item-number 01
+                            .main-steps__item-title Watching online video lectures
+                            .main-steps__item-text.text Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
+
+                        .main-steps__item
+                            .main-steps__item-number 02
+                            .main-steps__item-title Passing test
+                            .main-steps__item-text.text Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim ad tempor est ea.
+
+                        .main-steps__item
+                            .main-steps__item-number 03
+                            .main-steps__item-title Curator’s feedback
+                            .main-steps__item-text.text Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt.
+
+                        .main-steps__item
+                            .main-steps__item-number 04
+                            .main-steps__item-title Corrections if needed
+                            .main-steps__item-text.text Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.
+
+                .discount
+                    .discount__body
+                        .discount__item
+                            h3.discount__title 20% discount for early birds!
+                            .discount__calendar
+                                .discount__calendar_item
+                                    .discount__calendar_number 06
+                                    .discount__calendar_day Days
+                                .discount__calendar_item
+                                    .discount__calendar_number 18
+                                    .discount__calendar_day Hours
+                                .discount__calendar_item
+                                    .discount__calendar_number 24
+                                    .discount__calendar_day Mins
+                                .discount__calendar_item
+                                    .discount__calendar_number 12
+                                    .discount__calendar_day Sec
+
+
+                        .discount__form
+                            form(action="#").discount__form_body
+                                input(type="text" name="name" placeholder="Your full name" required).discount__form__input
+                                input(type="email" name="email" placeholder="Your working email" required).discount__form__input
+                                input(type="tel" name="tel" placeholder="Your phone number" required).discount__form__input
+                            .discount-form__button
+                                a(href="#").discount-form__btn.all-button__second Join the course
+            section.useful.container
+                .useful__body
+                    .useful__body-title 
+                        h3.useful__subtitle.subtitle For whom?
+                        h2.useful__title.title Who will benefit from the course:
+                    .useful__body-info
+                        .auseful-info__offer
+                            p.createx__offer.content-one Specialists with more than 1 year of active work experience
+                                img(src="../img/createx/check.png", alt="Галочка").check
+                            p.createx__offer.content-one Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces
+                                img(src="../img/createx/check.png", alt="Галочка").check
+                            p.createx__offer.content-one Professional designers who want to feel more confident in UX
+                                img(src="../img/createx/check.png", alt="Галочка").check
+                            p.createx__offer.content-one Specialists who would like to structure their knowledge, fill in the gaps
+                                img(src="../img/createx/check.png", alt="Галочка").check
+            section.course-program.container
+                .course-program__body
+                    .course-program__body-info
+                        h3.course-program__subtitle.subtitle Course program
+                        h2.course-program__title.title What will you learn
+                        .course-program__info
+                            .course-program__lesson
+                                p.program__lesson Lesson 1.
+                                p.program__offer Aliquet lectus urna viverra in odio.
+                            p.course-program__text.text Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.
+
+                        .course-program__info
+                            .course-program__lesson
+                                p.program__lesson Lesson 2.
+                                p.program__offer Orci commodo, viverra orci mollis ut euismod.
+                            p.course-program__text.text Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.
+
+                        .course-program__info
+                            .course-program__lesson
+                                p.program__lesson Lesson 3.
+                                p.program__offer Sagittis vitae facilisi rutrum amet mauris quisque vel.
+                            p.course-program__text.text Unlike lorem ipsum, the text fish in Russian will fill any layout with an incomprehensible meaning and give a unique flavor of Soviet times.
+
+                        .course-program__info
+                            .course-program__lesson
+                                p.program__lesson Lesson 4.
+                                p.program__offer In id dolor quis nunc, urna hendrerit pharetra.
+                            p.course-program__text.text It should not be forgotten, however, that the beginning of daily work on the formation of a position allows us to appreciate the value of systems of mass participation.
+
+                        .course-program__info
+                            .course-program__lesson
+                                p.program__lesson Lesson 5.
+                                p.program__offer Est, ut tempus id rutrum facilisi.
+                            p.course-program__text.text Everyday practice shows that consultations with a wide range of assets require the definition and refinement of the personnel training system, which corresponds to urgent needs.
+
+                    .course-program__body-image
+                        img(src="../img/createx/illustration.png", alt="Картинка")
+            section.testimonials.testimonials-two
+                .testimonials__body.container
+                    h3.testimonials__subtitle.subtitle Testimonials
+                    h2.testimonials__title.title What our students say
+                    .owl-carousel.owl-theme
+                        //-First slide
+                        .item.testimonials__row
+                            .test__body
+                                .testimonials__info.testimonials__first
+                                    p.testimonials__text.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                                    .commentator
+                                        .commentator__photo
+                                            img(src="../img/testimonials/commentator-1.png", alt="Фото-1")
+                                        .commentator_info
+                                            p.commentator__name Eleanor Pena
+                                            p.commentator__text Position, Course
+
+                        //-Second slide
+                        .item.testimonials__row
+                            .test__body
+                                .testimonials__info.testimonials__second
+                                    p.testimonials__text.text At its core, the fish text is an alternative to the traditional lorem ipsum, which causes some people to be puzzled when trying to read the fish text.
+                                    .commentator
+                                        .commentator__photo
+                                            img(src="../img/testimonials/commentator-2.png", alt="Фото-1")
+                                        .commentator_info
+                                            p.commentator__name Taisiia Shestopal
+                                            p.commentator__text Position, Course
+
+
+                        //-Third slide
+                        .item.testimonials__row
+                            .test__body
+                                .testimonials__info.testimonials__third
+                                    p.testimonials__text.text When creating the generator, we used the well-known universal speech code. The text is randomly generated in paragraphs from two to ten sentences per paragraph, which makes the text more attractive and lively for visual and auditory perception.
+                                    .commentator
+                                        .commentator__photo
+                                            img(src="../img/testimonials/commentator-3.png", alt="Фото-1")
+                                        .commentator_info
+                                            p.commentator__name Anita Chong
+                                            p.commentator__text Position, Course
+
+                    .request
+                        .request__body
+                            .request__image
+                                img(src="../img/createx/request-image.png", alt="Картинка")
+                            .request__registration
+                                h3.request__subtitle.subtitle Leave a request now and get 20% off!
+                                h2.request__title.title Register for the course
+                                .request__form
+                                    form(action="#").request__form_body
+                                        p.request__form_text Full Name
+                                        input(type="text" name="name" placeholder="Your full name" required).request__form__input
+                                        p.request__form_text Email
+                                        input(type="email" name="email" placeholder="Your working email" required).request__form__input
+                                        p.request__form_text Phone
+                                        input(type="tel" name="tel" placeholder="Your phone number" required).request__form__input
+                                    .request-form__button
+                                        a(href="#").discount-form__btn.all-button__second Join the course
+            section.other-courses.container
+                .other-courses__body
+                    h3.other-courses__subtitle.subtitle Check other courses
+                    h2.other-courses__title.title You may also like
+
+
+                .owl-carousel.courses-carousel.owl-theme
+                    //-First slide
+                    .item.other-courses__cards
+                        .other-courses__card.cards-one
+                            .featured-courses__card-image
+                                img(src="../img/featured-courses/card-1.jpg", alt="1 сотрудник")
+                            .featured-courses__card-info
+                                p.featured-courses__card_job-one Marketing
+                                p.featured-courses__card_title The Ultimate Google Ads Training Course
+                                .featured-courses__card_price
+                                    p.card_price $100
+                                    p.card_name by Jerome Bell
+                        .other-courses__card.card-two
+                            .featured-courses__card-image
+                                img(src="../img/featured-courses/card-2.jpg", alt="2 сотрудник")
+                            .featured-courses__card-info
+                                p.featured-courses__card_job-two Management
+                                p.featured-courses__card_title Prduct Management Fundamentals
+                                .featured-courses__card_price
+                                    p.card_price $480
+                                    p.card_name by Marvin McKinney
+
+                    //-Second slide
+                    .item.other-courses__cards
+                        .other-courses__card.cards-three
+                            .featured-courses__card-image
+                                img(src="../img/featured-courses/card-3.jpg", alt="3 сотрудник")
+                            .featured-courses__card-info
+                                p.featured-courses__card_job-three HR & Recruting
+                                p.featured-courses__card_title HR  Management and Analytics
+                                .featured-courses__card_price
+                                    p.card_price $200
+                                    p.card_name by Leslie Alexander Li
+                        .other-courses__card.card-for
+                            .featured-courses__card-image
+                                img(src="../img/featured-courses/card-4.jpg", alt="4 сотрудник")
+                            .featured-courses__card-info
+                                p.featured-courses__card_job-one Marketing
+                                p.featured-courses__card_title Brand Management & PR Communications
+                                .featured-courses__card_price
+                                    p.card_price $530
+                                    p.card_name by Kristin Watson
+
+                    //-Third slide
+                    .item.other-courses__cards
+                        .other-courses__card.cards-five
+                            .featured-courses__card-image
+                                img(src="../img/featured-courses/card-5.jpg", alt="5 сотрудник")
+                            .featured-courses__card-info
+                                p.featured-courses__card_job-two Management
+                                p.featured-courses__card_title Business Development Management
+                                .featured-courses__card_price
+                                    p.card_price $400
+                                    p.card_name by Dianne Russell
+                        .other-courses__card.card-six
+                            .featured-courses__card-image
+                                img(src="../img/featured-courses/card-6.jpg", alt="6 сотрудник")
+                            .featured-courses__card-info
+                                p.featured-courses__card_job-six Design
+                                p.featured-courses__card_title Graphic Design Basic
+                                .featured-courses__card_price
+                                    p.card_price $500
+                                    p.card_name by Guy Hawkins
+
+                .courses__offer
+                    p.other-courses__offer Do you want more courses?
+                    a(href="#").other-courses__button.all-button__second View all courses
+
+            include modules/footer
+
+
+        script(src="../js/jquery-3.6.0.min.js")
+        script(src="../js/owl.carousel.min.js") 
+        script(src="../js/style.js")
